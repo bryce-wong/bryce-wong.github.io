@@ -1,0 +1,17 @@
+---
+title: "Holy cow!"
+---
+
+### I have a webpage!
+
+And I can put all kinds of stuff on it!
+
+###Add some links
+
+I like [google](https://www.google.com)
+
+I can link directly to my [about page](about.html)
+
+###Using HTML to embed images
+<img src="images/image.jpg" style="width:75%">
+Must make an images folder in your project directory and then add the image to it (reduces clutter in the overall directory). 
