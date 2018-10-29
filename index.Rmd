@@ -1,17 +1,9 @@
 ---
-title: "Holy cow!"
+title: "Bryce Wong"
 ---
 
-### I have a webpage!
+### About Bryce (she/her/hers): 
 
-And I can put all kinds of stuff on it!
+MPH candidate interested in the social dynamics of public health, technology, and media.
 
-###Add some links
-
-I like [google](https://www.google.com)
-
-I can link directly to my [about page](about.html)
-
-###Using HTML to embed images
-<img src="images/image.jpg" style="width:75%">
-Must make an images folder in your project directory and then add the image to it (reduces clutter in the overall directory). 
+See my [CV here](CV.html)
