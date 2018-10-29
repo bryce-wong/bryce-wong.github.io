@@ -207,6 +207,12 @@ $(document).ready(function () {
      
   </a>
 </li>
+<li>
+  <a href="dashboard_template.html">
+    <span class="fa fa-cutlery fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -245,20 +251,13 @@ library(plotly)</code></pre>
 <pre><code>## The following object is masked from &#39;package:graphics&#39;:
 ## 
 ##     layout</code></pre>
-<pre class="r"><code>set.seed(1)
-
-data(nyc_airbnb)
-nyc_airbnb = 
-  nyc_airbnb %&gt;% 
-  mutate(rating = review_scores_location / 2) %&gt;%
-  select(boro = neighbourhood_group, neighbourhood, rating, price, room_type,
-         latitude, longitude) %&gt;%
-  filter(!is.na(rating), 
-         boro == &quot;Manhattan&quot;,
-         room_type == &quot;Entire home/apt&quot;,
-         price %in% 100:500)  %&gt;% 
+<pre class="r"><code>data(rest_inspec)
+rest_inspec = rest_inspec %&gt;% 
+  rename(rest_name = dba, id = camis) %&gt;% 
+  select(action, boro, id, critical_flag, cuisine_description,
+         rest_name, inspection_type, score, grade, grade_date, zipcode) %&gt;%
+  filter(!is.na(grade)) %&gt;% 
   sample_n(5000)</code></pre>
-<p>He often prefers to use plotly itself, rather than ggplot converted to plotly using ggplotly - when using plots for external use</p>
 
 
 

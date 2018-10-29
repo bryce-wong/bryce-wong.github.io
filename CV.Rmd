@@ -2,8 +2,35 @@
 title: "CV"
 ---
 
-### About this site
+### Education
 
-Sometimes you need to say a bit about the site -- how it was made, where it's hosted, where the source code can be found. 
+#### Master of Public Health | Expected May 2019 | Columbia University Mailman SPH
+* Department: Sociomedical Sciences
+* Certificate: Applied Biostatistics
+* Awards: Dr. Jack Elinson Scholarship recipient
+* Relevant coursework: New Media and Health; Quantitative Research Methods for Social Sciences; Health Promotion: Theory, Research, and Practice; Data Science I; Analysis of Categorical Variables
 
-If this is for a project or analysis, I recommend giving some details about the R package versions that you used to create the content.
+#### Bachelor of Science | March 2017 | University of California, Los Angeles
+* Major: Cognitive Science
+* Major: Magna Cum Laude, Dean's Honors List
+* Relevant coursework: Health Psychology; Advanced Programming; Machine Learning in Brain Science
+
+### Relevant Experience
+
+#### Digital Health Intern | AIDS Institute | Jan. 2018-Present
+* Creates and manages social media strategies for the Y Get It? (YGI) project, which focuses on linking HIV-affected youth to care through a mobile application intervention and a comic serial, “Tested.”  
+* Organizes and facilitates conference events and administrative tasks for the Clinical Education Initiative (CEI), which implements telehealth programs for clinicians across New York state.
+* Develops evaluation summaries and research ideas with the CEI and YGI evaluation teams.
+
+#### VP of External Communication | Mailman Healthcare Data Analytics Club | Jan. 2018-Present
+* Engages in event programming, including advertising and logistics needs, for events designed to elevate the analytical skill sets of the Mailman student body and ultimately improve data-driven healthcare decisions in future careers. 
+* Serves as the direct liaison to alumni and external organizations for event planning and management.
+
+### Research Experience
+
+#### Research Fellow | Lerner Center for Public Health Promotion | June 2018-Present
+* Assists with coding, analyzing, and interpreting point-of-sale advertising data for tobacco products in New York City. 
+* Contributes to the development of a study on social media advertising for marijuana vaporizer pens.
+* Provides support for a menstrual health product content analysis study by collecting advertising data.
+
+

@@ -10,19 +10,11 @@ library(plotly)
 ```
 
 ```{r}
-set.seed(1)
-
-data(nyc_airbnb)
-nyc_airbnb = 
-  nyc_airbnb %>% 
-  mutate(rating = review_scores_location / 2) %>%
-  select(boro = neighbourhood_group, neighbourhood, rating, price, room_type,
-         latitude, longitude) %>%
-  filter(!is.na(rating), 
-         boro == "Manhattan",
-         room_type == "Entire home/apt",
-         price %in% 100:500)  %>% 
+data(rest_inspec)
+rest_inspec = rest_inspec %>% 
+  rename(rest_name = dba, id = camis) %>% 
+  select(action, boro, id, critical_flag, cuisine_description,
+         rest_name, inspection_type, score, grade, grade_date, zipcode) %>%
+  filter(!is.na(grade)) %>% 
   sample_n(5000)
 ```
-
-He often prefers to use plotly itself, rather than ggplot converted to plotly using ggplotly - when using plots for external use

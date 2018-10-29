@@ -11,6 +11,8 @@ navbar:
       href: https://github.com/bryce-wong
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/bryce-wong-284219139
+    - icon: fa-cutlery fa-lg
+      href: dashboard_template.html
 output:
   html_document:
     theme: cosmo

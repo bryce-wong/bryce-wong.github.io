@@ -2,8 +2,13 @@
 title: "Bryce Wong"
 ---
 
-### About Bryce (she/her/hers): 
+### About Bryce (she/her/hers):
 
 MPH candidate interested in the social dynamics of public health, technology, and media.
 
 See my [CV here](CV.html)
+
+<img src="images/profile.jpg" style="width:50%">
+
+
+
