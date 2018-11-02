@@ -254,10 +254,11 @@ library(plotly)</code></pre>
 <pre class="r"><code>data(rest_inspec)
 rest_inspec = rest_inspec %&gt;% 
   rename(rest_name = dba, id = camis) %&gt;% 
-  select(action, boro, id, critical_flag, cuisine_description,
-         rest_name, inspection_type, score, grade, grade_date, zipcode) %&gt;%
-  filter(!is.na(grade)) %&gt;% 
-  sample_n(5000)</code></pre>
+  separate(grade_date, into = c(&quot;year&quot;, &quot;month&quot;, &quot;day&quot;), sep = &quot;-&quot;) %&gt;% select(action, boro, id, critical_flag, cuisine_description,
+         rest_name, inspection_type, score, grade, year, zipcode) %&gt;%
+  filter(!is.na(grade), !is.na(year), year %in% 2013:2017) %&gt;% 
+  sample_n(5000) %&gt;% 
+  arrange(year)</code></pre>
 
 
 

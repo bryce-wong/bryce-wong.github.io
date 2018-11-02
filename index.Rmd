@@ -2,13 +2,26 @@
 title: "Bryce Wong"
 ---
 
+<p>
+
+<img src="images/profile.jpg" style="width:35%; margin-right: 50px" align="left">
+
 ### About Bryce (she/her/hers):
 
 MPH candidate interested in the social dynamics of public health, technology, and media.
 
+My thesis explores the ethical implications of big data for public health. I'm primarily interested in using qualitative research methods to investigate:
+
+* The perceptions and agendas influencing biostatisticians and computer scientists working in this field
+* How data infrastructures are designed and managed for health technology
+* The potential impact of such design and management choices on issues of normalization, oppression, and empowerment 
+
+If you want to talk more about these topics, you can email me at: <baw2160@cumc.columbia.edu>
+
 See my [CV here](CV.html)
 
-<img src="images/profile.jpg" style="width:50%">
+[Eat here not there](dashboard_template.html)
 
+</p>
 
 

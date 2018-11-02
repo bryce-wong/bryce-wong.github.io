@@ -8,12 +8,13 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+library(tidyverse)
 ```
 
 Column {data-width=500}
 -----------------------------------------------------------------------
 
-### Chart A
+### Scores of most popular restaurant types
 
 ```{r}
 popular_cuisine =
@@ -25,27 +26,87 @@ popular_cuisine =
 inner_join(rest_inspec, popular_cuisine,
              by = "cuisine_description") %>% 
   mutate(cuisine_description = fct_reorder(cuisine_description, score)) %>% 
-  plot_ly(y = ~score, color = ~cuisine_description, type = "box",
-          colors = "Set2")
+  #plot_ly(y = ~score, color = ~cuisine_description, type = "box",
+  #       colors = "Set2") %>% 
+  #layout(legend = list(orientation = 'h'))
+plot_ly(
+    x = ~cuisine_description,
+    y = ~score,
+    split = ~cuisine_description,
+    type = 'violin',
+    box = list(
+      visible = T,
+    colors = "Set2"),
+    meanline = list(
+      visible = T
+    )
+  ) %>% 
+  layout(
+    legend = list(orientation = 'h')
+  )
 ```
 
 Column {data-width=500}
 -----------------------------------------------------------------------
 
-### Chart B
+### Distribution of scores per borough by year
 
 ```{r}
 rest_inspec %>% 
-  plot_ly(y = ~score, color = ~boro, type = "box",
-          colors = "Set2")
+  plot_ly(x = ~score, type = 'histogram', color = ~boro, alpha = 0.6,
+          transforms = list(
+            list(
+              type = 'filter',
+              target = ~year,
+              operation = '=',
+              value = unique(rest_inspec$year)[1]
+              )
+            )
+          ) %>% 
+  layout(barmode = "overlay",
+    updatemenus = list(
+      list(
+        type = 'dropdown',
+        active = 0,
+        buttons = list(
+          list(method = "restyle",
+            args = list("transforms[0].value", unique(rest_inspec$year)[1]),
+            label = unique(rest_inspec$year)[1]),
+          list(method = "restyle",
+            args = list("transforms[0].value", unique(rest_inspec$year)[2]),
+            label = unique(rest_inspec$year)[2]),
+          list(method = "restyle",
+            args = list("transforms[0].value", unique(rest_inspec$year)[3]),
+            label = unique(rest_inspec$year)[3]),
+          list(method = "restyle",
+            args = list("transforms[0].value", unique(rest_inspec$year)[4]),
+            label = unique(rest_inspec$year)[4]),
+          list(method = "restyle",
+            args = list("transforms[0].value", unique(rest_inspec$year)[5]),
+            label = unique(rest_inspec$year)[5])
+          )
+        )
+      )
+    )
 ```
 
-### Chart C
+### Distribution of grades by borough
 
 ```{r}
 rest_inspec %>% 
   count(boro, grade) %>% 
-  mutate(boro = fct_reorder(boro, n)) %>% 
-  plot_ly(x = ~grade, y = ~n, color = ~boro, type = "bar")
+  mutate(
+    boro = fct_reorder(boro, n),
+    grade = case_when(
+    grade == "A" ~ "A",
+    grade == "B" ~ "B",
+    grade == "C" ~ "C",
+    grade == "Not Yet Graded" ~ "Ungraded",
+    grade == "P" ~ "Ungraded",
+    grade == "Z" ~ "Ungraded"
+    )
+  ) %>% 
+  plot_ly(x = ~grade, y = ~n, color = ~boro, type = "bar") %>% 
+  layout(yaxis = list(title = "count"), barmode = 'stack')
 ```
 
