@@ -12,7 +12,7 @@ title: "CV"
 
 #### Bachelor of Science | March 2017 | University of California, Los Angeles
 * Major: Cognitive Science
-* Major: Magna Cum Laude, Dean's Honors List
+* Awards: Magna Cum Laude, Dean's Honors List
 * Relevant coursework: Health Psychology; Advanced Programming; Machine Learning in Brain Science
 
 ### Relevant Experience
@@ -32,5 +32,5 @@ title: "CV"
 * Assists with coding, analyzing, and interpreting point-of-sale advertising data for tobacco products in New York City. 
 * Contributes to the development of a study on social media advertising for marijuana vaporizer pens.
 * Provides support for a menstrual health product content analysis study by collecting advertising data.
-
+ 
 

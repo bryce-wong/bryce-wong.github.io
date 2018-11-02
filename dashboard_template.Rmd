@@ -34,7 +34,7 @@ inner_join(rest_inspec, popular_cuisine,
     box = list(
       visible = T,
     colors = "Set2"),
-    meanline = list(
+    meanline = list( 
       visible = T
     )
   ) %>% 
