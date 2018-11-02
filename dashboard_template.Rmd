@@ -26,10 +26,7 @@ popular_cuisine =
 inner_join(rest_inspec, popular_cuisine,
              by = "cuisine_description") %>% 
   mutate(cuisine_description = fct_reorder(cuisine_description, score)) %>% 
-  #plot_ly(y = ~score, color = ~cuisine_description, type = "box",
-  #       colors = "Set2") %>% 
-  #layout(legend = list(orientation = 'h'))
-plot_ly(
+  plot_ly(
     x = ~cuisine_description,
     y = ~score,
     split = ~cuisine_description,
@@ -42,7 +39,8 @@ plot_ly(
     )
   ) %>% 
   layout(
-    legend = list(orientation = 'h')
+    xaxis = list(title = "cuisine type"),
+    legend = list(orientation = 'h', yanchor = 'bottom', y = -1.2)
   )
 ```
 
@@ -63,7 +61,7 @@ rest_inspec %>%
               )
             )
           ) %>% 
-  layout(barmode = "overlay",
+  layout(barmode = "overlay", yaxis = list(title = "count"),
     updatemenus = list(
       list(
         type = 'dropdown',

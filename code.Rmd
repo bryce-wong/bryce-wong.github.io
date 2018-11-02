@@ -10,12 +10,13 @@ library(plotly)
 ```
 
 ```{r}
+set.seed(1)
+
 data(rest_inspec)
 rest_inspec = rest_inspec %>% 
   rename(rest_name = dba, id = camis) %>% 
   separate(grade_date, into = c("year", "month", "day"), sep = "-") %>% select(action, boro, id, critical_flag, cuisine_description,
          rest_name, inspection_type, score, grade, year, zipcode) %>%
   filter(!is.na(grade), !is.na(year), year %in% 2013:2017) %>% 
-  sample_n(5000) %>% 
-  arrange(year)
+  sample_n(5000)
 ```
