@@ -11,6 +11,17 @@ library(flexdashboard)
 library(tidyverse)
 ```
 
+Inputs {.sidebar}
+-------------------------------------
+
+This flexdashboard uses plot.ly to visualize NYC restaurant inspection data. The data set used was specific to Jeff Goldsmith's Data Science I fall 2018 course at Columbia University's Mailman School of Public Health, but an updated version can be publicly found on [NYC Open Data](https://dev.socrata.com/foundry/data.cityofnewyork.us/9w7m-hzhe). 
+
+More information about the data set can be found [here](http://p8105.com/dataset_restaurant_inspections.html). 
+
+Every regulation that a restaurant fails to comply with earns that restaurant points according to a defined scoring scheme. The total number of points at the conclusion of an inspection are converted into grades. The more points a restaurant accumulates, the worse the grade that restaurant is given.
+
+Return to my website [here](index.html).
+
 Column {data-width=500}
 -----------------------------------------------------------------------
 

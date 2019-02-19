@@ -7,9 +7,10 @@ library(tidyverse)
 library(viridis)
 library(p8105.datasets)
 library(plotly)
+library(httr)
 ```
 
-```{r}
+```{r rest_inspect}
 set.seed(1)
 
 data(rest_inspec)
@@ -20,3 +21,116 @@ rest_inspec = rest_inspec %>%
   filter(!is.na(grade), !is.na(year), year %in% 2013:2017) %>% 
   sample_n(5000)
 ```
+
+```{r motor_data_import}
+set.seed(1)
+motor_collis = read_csv(file = "./data/NYPD_Motor_Vehicle_Collisions.csv") %>% 
+  janitor::clean_names() %>% 
+  select(date, time, boro = borough, zip_code, latitude, longitude, 
+         injured = number_of_persons_injured, 
+         killed = number_of_persons_killed, 
+         factor_1 = contributing_factor_vehicle_1, 
+         factor_2 = contributing_factor_vehicle_2, 
+         factor_3 = contributing_factor_vehicle_3, 
+         factor_4 = contributing_factor_vehicle_4, 
+         factor_5 = contributing_factor_vehicle_5) %>% 
+  separate(date, into = c("month", "day", "year"), sep = "/") %>% 
+  mutate(month = as.numeric(month), 
+         day = as.numeric(day),
+         year = as.numeric(year),
+         hurt = injured + killed,
+         season = ifelse((month >= 3) & (month <= 5), "spring", ifelse((month >= 6) & (month <= 8), "summer", ifelse((month >= 9) & (month <= 11),"autumn", "winter")))) %>% 
+  filter(!is.na(boro), !is.na(latitude), !is.na(longitude), latitude != 0, longitude != 0, year %in% 2016:2017) %>% 
+  sample_n(5000)
+
+traffic_control_requests = read_csv(file = "./data/Traffic_Signal_and_All-Way_Stop_Study_Requests.csv") %>% 
+  janitor::clean_names() %>% 
+  select(id, date_requested, status_description, request_type, boro = borough) %>% 
+  separate(date_requested, into = c("month", "day", "year"), sep = "/") %>%
+  filter(year %in% 2016:2017) %>%
+  sample_n(5000)
+```
+
+```{r motor_EDA}
+#scatterplot of the latitude and longitudes, colored by season
+motor_collis %>%
+  mutate(text_label = str_c("Season: ", season, '\nHurt: ', hurt)) %>% 
+  plot_ly(x = ~longitude, y = ~latitude, type = "scatter", mode = "markers",
+          alpha = 0.5, 
+          color = ~season,
+          text = ~text_label)
+
+#bar plot of number of collisions per season
+motor_collis %>% 
+  count(season) %>% 
+  mutate(season = fct_reorder(season, n)) %>% 
+  plot_ly(x = ~season, y = ~n, color = ~season, type = "bar")
+
+#dunno when this will be useful - average ppl hurt in each season
+hurt_summary = motor_collis %>%
+  group_by(season) %>%
+  summarize(mean_hurt = mean(hurt))
+            
+#bar graph in ggplot of the amount of crashes with a certain number hurt for each season
+ggplot(motor_collis, aes(x = hurt, fill = season)) + 
+  geom_histogram(position = "dodge", binwidth = 2) 
+
+#above bar graph but in plotly
+spread_motor = motor_collis %>% 
+  count(season, hurt) %>% 
+  spread(key = season, value = n) %>% 
+  janitor::clean_names()
+
+spread_motor %>% plot_ly(x = ~hurt, y = ~winter, type = 'bar', name = 'Winter') %>%
+  add_trace(y = ~spring, name = 'Spring') %>%
+  add_trace(y = ~summer, name = 'Summer') %>%
+  add_trace(y = ~autumn, name = 'Fall') %>%
+  layout(title = "Number Hurt by Season",
+         yaxis = list(title = 'Number of Motor Collisions'), 
+         barmode = 'group')
+#doesn't really seem to be that noticeable of a diff across seasons
+```
+
+```{r contributions}
+#top 9 factor_1
+common_factors_1 =
+  motor_collis %>% 
+  count(factor_1, sort = TRUE) %>% 
+  top_n(9) %>% 
+  select(factor_1) 
+
+#bar graph of top 9 factor_1
+inner_join(motor_collis, common_factors_1,
+             by = "factor_1") %>% 
+  count(factor_1) %>% 
+  mutate(factor_1 = fct_reorder(factor_1, n)) %>% 
+  plot_ly(x = ~factor_1, y = ~n, color = ~factor_1, type = "bar",
+          colors = "Set2")
+
+#top 9 factor_2
+common_factors_2 =
+  motor_collis %>% 
+  filter(!is.na(factor_2)) %>% 
+  count(factor_2, sort = TRUE) %>% 
+  top_n(9) %>% 
+  select(factor_2)
+
+#bar grap of top 9 factor 2
+inner_join(motor_collis, common_factors_2,
+             by = "factor_2") %>% 
+  count(factor_2) %>% 
+  mutate(factor_2 = fct_reorder(factor_2, n)) %>% 
+  plot_ly(x = ~factor_2, y = ~n, color = ~factor_2, type = "bar",
+          colors = "Set2")
+
+#collisions by borough
+boro_collis = motor_collis %>% 
+  count(boro) %>% 
+  mutate(boro = fct_reorder(boro, n))
+
+plot_ly(boro_collis, x = ~boro, y = ~n, color = ~boro, type = "bar")
+#seems to be significant
+```
+
+
+
