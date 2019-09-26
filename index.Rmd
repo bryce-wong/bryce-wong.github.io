@@ -8,7 +8,7 @@ title: "Bryce Wong"
 
 ### About Bryce (she/her/hers):
 
-MPH candidate passionate about the social dynamics of public health, technology, and data.
+MPH graduate and current data analyst at Crossix -  passionate about the social dynamics of public health, technology, and data.
 
 My thesis explores the ethical implications of big data for public health. I'm proposing the use of qualitative research methods to investigate:
 
@@ -16,7 +16,7 @@ My thesis explores the ethical implications of big data for public health. I'm p
   * How data infrastructures are designed and managed for health technology
   * The potential impact of such design and management choices on issues of normalization, oppression, and empowerment 
 
-If you want to talk more about these topics, you can email me at: <baw2160@cumc.columbia.edu>
+If you want to talk more about these topics, you can email me at: <baw2160@caa.columbia.edu>
 
 See my [CV here](CV.html)
 
