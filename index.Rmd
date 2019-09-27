@@ -10,7 +10,7 @@ title: "Bryce Wong"
 
 MPH graduate and current data analyst at Crossix -  passionate about the social dynamics of public health, technology, and data.
 
-My thesis explores the ethical implications of big data for public health. I'm proposing the use of qualitative research methods to investigate:
+My thesis explores the ethical implications of big data for public health. I propose the use of qualitative research methods to investigate:
 
   * The perceptions and agendas influencing biostatisticians and data scientists working in this field
   * How data infrastructures are designed and managed for health technology

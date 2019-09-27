@@ -2,6 +2,11 @@
 title: "CV"
 ---
 
+### Experience
+
+#### Crossix Solutions Inc | Lead Marketing Data Analyst | June 2019 - Present
+* I conduct impact analyses for pharmaceutical marketing campaigns, linking health data and consumer data together using privacy-safe technology 
+
 ### Education
 
 #### Master of Public Health | May 2019 | Columbia University Mailman SPH
@@ -20,6 +25,7 @@ title: "CV"
 * Statistical Software: Experienced with SAS, R, Python, HTML5, CSS, Javascript, and C++
 * Computer: Experienced in Microsoft Word, Excel, and PowerPoint for both Mac and PC; proficient with the Adobe Creative Suite
 * Research Experience: Experienced in conducting literature reviews, writing research proposals, and collecting and analyzing data
+* Peer-reviewed journal publications: Giovenco, D.P., Spillane, T.E., Wong, B.A., Wackowski, O.A. (2019). Characteristics of storefront tobacco advertisements and differences by product type: A content analysis of retailers in New York City, USA. Preventive Medicine, 123, 204-207.
 * Interests: Ethical frameworks for big data, machine learning and algorithmic tools in public health, narrative and storytelling in public health promotion 
 
 ### Digital Health Experience
@@ -37,7 +43,7 @@ title: "CV"
 
 ### Leadership Experience
  
-#### Columbia University Bard Hall Players | Stage Manager | Jan – Present
+#### Columbia University Bard Hall Players | Stage Manager | Jan – May 2019
 * Organize and maintain rehearsal schedules, events, and creative team communication for musical and stage productions with the interschool medical center campus theater group 
 * Lead the efficient and smooth implementation of backstage and onstage operations for performances
 
