@@ -53,3 +53,15 @@ title: "CV"
 #### Tau Beta Sigma, Epsilon Kappa Chapter | Webmaster | Sept 2014 – June 2017
 * Redesigned site theme and content to improve user experience and navigation, including introducing an interactive family tree with D3.js and systematized profile pages with dynamic elements using HTML5
 * Worked to integrate GSuite into the officer board’s email and online organizational tools
+
+
+### Projects
+
+
+#### Mount Sinai Health Hackathon 2019 | Team Blackbox AI | Oct. 2019
+* Worked with a team to design and create a website that uses video lessons, interactive statistical graphs, and written descriptions to educate clinicians on the application and interpretation of artificial intelligence in healthcare settings
+* I contributed to the brainstorming of the project execution and wrote HTML in Dash to create a functioning mock-up of the website
+
+#### Datakind + Microsoft Virtual DataDive: Applying AI to Societal Challenges in US Cities | Miami Project | Oct. 2019
+* Volunteered data science expertise with fellow DataDive participants to help Code for Miami and the city of Miami create an API for their gethousing.org site. The goal of the API allows developers to digitally track housing applications by predicting the number of days an application will be in review
+* Using data from Miami's open data portal, I wrote and tuned several types of linear models in both R and Python to support the project's exploration of predictive models
