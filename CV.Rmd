@@ -30,10 +30,10 @@ title: "CV"
 
 ### Digital Health Experience
 
-#### NYSDOH's AIDS Institute | Digital Health Intern | Jan 2018 - Present
-* Create and manage social media strategies for the Y Get It? (YGI) project, which focuses on linking HIV-affected youth to care through a mobile application intervention and a comic serial, “Tested”    
-* To improve program evaluation, create web-scraping algorithms and perform quantitative and qualitative analysis on collected social media comment data.
-* Develop and lead presentations on new tools and technologies for digital health promotion
+#### NYSDOH's AIDS Institute | Digital Health Intern | Jan 2018 - June 2019
+* Created and managed social media strategies for the Y Get It? (YGI) project, which focuses on linking HIV-affected youth to care through a mobile application intervention and a comic serial, “Tested”    
+* To improve program evaluation, created web-scraping algorithms and performed quantitative and qualitative analysis on collected social media comment data.
+* Developed and led presentations on new tools and technologies for digital health promotion
 
 ### Research Experience
 
@@ -44,8 +44,8 @@ title: "CV"
 ### Leadership Experience
  
 #### Columbia University Bard Hall Players | Stage Manager | Jan – May 2019
-* Organize and maintain rehearsal schedules, events, and creative team communication for musical and stage productions with the interschool medical center campus theater group 
-* Lead the efficient and smooth implementation of backstage and onstage operations for performances
+* Organized and maintained rehearsal schedules, events, and creative team communication for musical and stage productions with the interschool medical center campus theater group 
+* Led the efficient and smooth implementation of backstage and onstage operations for performances
 
 #### Mailman Healthcare Data Analytics Club | VP of External Communication | Jan - Dec 2018
 * Engaged in event programming, including advertising and logistics needs, for events designed to elevate the analytical skill sets of the Mailman student body and ultimately improve data-driven healthcare decisions in future careers
@@ -57,7 +57,7 @@ title: "CV"
 
 ### Projects
 
-#### Open Climate Collabathon 2019 | Consumer Disclosure Team | Dec. 2019
+#### Open Climate Collabathon 2019 | [Consumer Disclosure Team](https://collabathon-docs.openclimate.earth/hacks/team-contributions/consumer-disclosure-and-sustainable-supply-chains) | Dec. 2019
 * Member of the the Consumer Disclosure team for the 2019 Open Climate Collabathon hosted by the Yale OpenLab.
 * I guided the writing of an overarching framework for the development and reporting of a "sustainability score" that could be used to grade the supply chain of a consumer product. The team also developed a proof-of-concept widget that could be added as a browser extension to report these scores on consumer websites.
 * We won the Community Choice award and the Most Innovative Contribution Award. 
