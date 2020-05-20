@@ -1,11 +1,35 @@
 ---
-title: "CV"
+title: "Resume"
 ---
 
-### Experience
+### Health + Data 
 
-#### Crossix Solutions Inc | Lead Marketing Data Analyst | June 2019 - Present
-* I conduct impact analyses for pharmaceutical marketing campaigns, linking health data and consumer data together using privacy-safe technology 
+#### Crossix, A Veeva Company | Lead Marketing Data Analyst | June 2019 - Present
+* Own the end-to-end analysis of the effects of life sciences marketing on health behaviors by leveraging a comprehensive data network through Crossix’s privacy-safe technology
+* Oversee the projects of newer analysts through the technical process and communication with collaborating teams
+* Lead the development of Spotfire visualization dashboards, improved agile project management, and troubleshooting/bug-tracking workflows and tools
+* Take point on the ingestion, exploration, and packaging of data for insights into the impact of COVID-19 on marketing trends
+ 
+### Digital Health 
+
+#### NYSDOH's AIDS Institute | Digital Health Intern | Jan 2018 - June 2019
+* Created and managed social media strategies for the Y Get It? (YGI) project, which focuses on linking HIV-affected youth to care through a mobile application intervention and a comic serial, “Tested”    
+* To improve program evaluation, created web-scraping algorithms and performed quantitative and qualitative analysis on collected social media comment data.
+* Developed and led presentations on new tools and technologies for digital health promotion
+
+### Research 
+
+#### Lerner Center for Public Health Promotion | Research Fellow | June - Dec 2018
+* Assisted with coding, analyzing, and interpreting point-of-sale advertising data for tobacco products in New York City.
+* Identified research questions, developed survey instruments, and coded data to explore social media advertising for marijuana vaporizer pens.
+
+###Skills
+
+* Statistical Software: Experienced with SQL, R, Python, SAS
+* Computer: Experienced in Microsoft Word, Excel, and PowerPoint for both Mac and PC; proficient with web development (HTML5 and CSS)
+* Research Experience: Experienced in conducting literature reviews, writing research proposals, and collecting and analyzing data
+* Peer-reviewed journal publications: Giovenco, D.P., Spillane, T.E., Wong, B.A., Wackowski, O.A. (2019). Characteristics of storefront tobacco advertisements and differences by product type: A content analysis of retailers in New York City, USA. Preventive Medicine, 123, 204-207.
+* Interests: Ethical frameworks for big data, machine learning and algorithmic tools in public health, narrative and storytelling in public health promotion 
 
 ### Education
 
@@ -20,52 +44,19 @@ title: "CV"
 * Awards: Magna Cum Laude, Dean's Honors List
 * Relevant coursework: Health Psychology; Advanced Programming; Machine Learning in Brain Science
 
-###Skills
-
-* Statistical Software: Experienced with SAS, R, Python, HTML5, CSS, Javascript, and C++
-* Computer: Experienced in Microsoft Word, Excel, and PowerPoint for both Mac and PC; proficient with the Adobe Creative Suite
-* Research Experience: Experienced in conducting literature reviews, writing research proposals, and collecting and analyzing data
-* Peer-reviewed journal publications: Giovenco, D.P., Spillane, T.E., Wong, B.A., Wackowski, O.A. (2019). Characteristics of storefront tobacco advertisements and differences by product type: A content analysis of retailers in New York City, USA. Preventive Medicine, 123, 204-207.
-* Interests: Ethical frameworks for big data, machine learning and algorithmic tools in public health, narrative and storytelling in public health promotion 
-
-### Digital Health Experience
-
-#### NYSDOH's AIDS Institute | Digital Health Intern | Jan 2018 - June 2019
-* Created and managed social media strategies for the Y Get It? (YGI) project, which focuses on linking HIV-affected youth to care through a mobile application intervention and a comic serial, “Tested”    
-* To improve program evaluation, created web-scraping algorithms and performed quantitative and qualitative analysis on collected social media comment data.
-* Developed and led presentations on new tools and technologies for digital health promotion
-
-### Research Experience
-
-#### Lerner Center for Public Health Promotion | Research Fellow | June - Dec 2018
-* Assisted with coding, analyzing, and interpreting point-of-sale advertising data for tobacco products in New York City.
-* Identified research questions, developed survey instruments, and coded data to explore social media advertising for marijuana vaporizer pens.
-
-### Leadership Experience
- 
-#### Columbia University Bard Hall Players | Stage Manager | Jan – May 2019
-* Organized and maintained rehearsal schedules, events, and creative team communication for musical and stage productions with the interschool medical center campus theater group 
-* Led the efficient and smooth implementation of backstage and onstage operations for performances
-
-#### Mailman Healthcare Data Analytics Club | VP of External Communication | Jan - Dec 2018
-* Engaged in event programming, including advertising and logistics needs, for events designed to elevate the analytical skill sets of the Mailman student body and ultimately improve data-driven healthcare decisions in future careers
-
-#### Tau Beta Sigma, Epsilon Kappa Chapter | Webmaster | Sept 2014 – June 2017
-* Redesigned site theme and content to improve user experience and navigation, including introducing an interactive family tree with D3.js and systematized profile pages with dynamic elements using HTML5
-* Worked to integrate GSuite into the officer board’s email and online organizational tools
-
-
-### Projects
+### Hackathons
 
 #### Open Climate Collabathon 2019 | [Consumer Disclosure Team](https://collabathon-docs.openclimate.earth/hacks/team-contributions/consumer-disclosure-and-sustainable-supply-chains) | Dec. 2019
-* Member of the the Consumer Disclosure team for the 2019 Open Climate Collabathon hosted by the Yale OpenLab.
-* I guided the writing of an overarching framework for the development and reporting of a "sustainability score" that could be used to grade the supply chain of a consumer product. The team also developed a proof-of-concept widget that could be added as a browser extension to report these scores on consumer websites.
-* We won the Community Choice award and the Most Innovative Contribution Award. 
+*	Winner of the Community Choice award and the Most Innovative Contribution Award
+*	Outlined a framework for developing and reporting a "sustainability score" that would be used to grade the supply chain of a consumer product. The team also developed a proof-of-concept widget that could be added as a browser extension to report these scores on consumer websites.
+*	Contributed to the writing of the overarching framework and helped generate an example of an application for the project (the iPhone). 
+*	Joined the 2020 discussions to help facilitate project management and next steps for future Collabathons
 
 #### Mount Sinai Health Hackathon 2019 | Team Blackbox AI | Oct. 2019
-* Worked with a team to design and create a website that uses video lessons, interactive statistical graphs, and written descriptions to educate clinicians on the application and interpretation of artificial intelligence in healthcare settings
-* I contributed to the brainstorming of the project execution and wrote HTML in Dash to create a functioning mock-up of the website
+*	Designed and created a website that uses video lessons, interactive statistical graphs, and written descriptions to educate clinicians on the application and interpretation of artificial intelligence in healthcare settings
+*	Brainstormed project execution and wrote HTML in Dash to create a functioning mock-up of the website (domain no longer active).
 
 #### Datakind + Microsoft Virtual DataDive: Applying AI to Societal Challenges in US Cities | Miami Project | Oct. 2019
-* Volunteered data science expertise with fellow DataDive participants to help Code for Miami and the city of Miami create an API for their gethousing.org site. The goal of the API allows developers to digitally track housing applications by predicting the number of days an application will be in review
-* Using data from Miami's open data portal, I wrote and tuned several types of linear models in both R and Python to support the project's exploration of predictive models
+*	Member of Miami Project team, comprised of data science and analysis volunteers in collaboration with the Code for Miami organization to implement AI in Cities 
+*	Engaged in exploratory data analysis, built/tested machine learning models, and stood up an API for the project partner to gain insight from. 
+

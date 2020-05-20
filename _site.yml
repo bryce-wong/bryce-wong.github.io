@@ -3,16 +3,17 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "CV"
+    - text: "Resume"
       href: CV.html
+    - icon: fa-cutlery fa-lg
+      href: dashboard_template.html
     - icon: fa-envelope fa-lg
-      href: mailto:<baw2160@cumc.columbia.edu>
+      href: mailto:<brycew.hello@gmail.com>
     - icon: fa-github fa-lg
       href: https://github.com/bryce-wong
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/bryce-wong-mph-284219139/
-    - icon: fa-cutlery fa-lg
-      href: dashboard_template.html
+
 output:
   html_document:
     theme: cosmo

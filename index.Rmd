@@ -16,11 +16,11 @@ My thesis explores the ethical implications of big data for public health. I pro
   * How data infrastructures are designed and managed for health technology
   * The potential impact of such design and management choices on issues of normalization, oppression, and empowerment 
 
-If you want to talk more about these topics, you can email me at: <baw2160@caa.columbia.edu>
+If you want to reach out and talk more about anything on this site that interests you, you can email me at: <brycew.hello@gmail.com>
 
-See my [CV here](CV.html)
+See my [resume here](CV.html)
 
-[Eat here not there](dashboard_template.html)
+By the way, while you're in NYC, [eat here not there](dashboard_template.html) 
 
 </p>
 
