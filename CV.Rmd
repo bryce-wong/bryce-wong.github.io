@@ -28,8 +28,7 @@ title: "Resume"
 * Statistical Software: Experienced with SQL, R, Python, SAS
 * Computer: Experienced in Microsoft Word, Excel, and PowerPoint for both Mac and PC; proficient with web development (HTML5 and CSS)
 * Research Experience: Experienced in conducting literature reviews, writing research proposals, and collecting and analyzing data
-* Peer-reviewed journal publications: Giovenco, D.P., Spillane, T.E., Wong, B.A., Wackowski, O.A. (2019). Characteristics of storefront tobacco advertisements and differences by product type: A content analysis of retailers in New York City, USA. Preventive Medicine, 123, 204-207.
-* Interests: Ethical frameworks for big data, machine learning and algorithmic tools in public health, narrative and storytelling in public health promotion 
+* Peer-reviewed journal publications: *Giovenco, D.P., Spillane, T.E., Wong, B.A., Wackowski, O.A. (2019). Characteristics of storefront tobacco advertisements and differences by product type: A content analysis of retailers in New York City, USA. Preventive Medicine, 123, 204-207.*
 
 ### Education
 
@@ -37,12 +36,12 @@ title: "Resume"
 * Department: Sociomedical Sciences
 * Certificate: Applied Biostatistics
 * Awards: Dr. Jack Elinson Scholarship recipient
-* Relevant coursework: New Media and Health; Quantitative Research Methods for Social Sciences; Health Promotion: Theory, Research, and Practice; Data Science I; Analysis of Categorical Variables; Machine Learning for Social Sciences
+* Thesis: *How Data Determines Health: A Qualitative Research Proposal Exploring Perceptions of Big Data in Public Health*
 
 #### Bachelor of Science | March 2017 | University of California, Los Angeles
 * Major: Cognitive Science
+* Specialization in Computing
 * Awards: Magna Cum Laude, Dean's Honors List
-* Relevant coursework: Health Psychology; Advanced Programming; Machine Learning in Brain Science
 
 ### Hackathons
 
