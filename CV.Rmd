@@ -5,23 +5,24 @@ title: "Resume"
 ### Health + Data 
 
 #### Crossix, A Veeva Company | Lead Marketing Data Analyst | June 2019 - Present
-* Own the end-to-end analysis of the effects of life sciences marketing on health behaviors by leveraging a comprehensive data network through Crossix’s privacy-safe technology
-* Responsible for reviewing project deliverables for newer analysts as well as providing guidance on technical, conceptual, and communciation-related processes
-* Lead the development of Spotfire visualization dashboards and improve agile project management along with troubleshooting/bug-tracking workflows
-* Ingest, explore, and package data for insights into the impact of COVID-19 on marketing trends
+* Own the end-to-end analysis of the effects of life sciences marketing on health behaviors by leveraging a comprehensive data network through Crossix’s privacy-safe technology.
+* Responsible for reviewing project deliverables for newer analysts as well as providing guidance on technical, conceptual, and communciation-related processes.
+* Lead the development of Spotfire visualization dashboards, improved agile project management systems, and more efficient troubleshooting/bug-tracking workflows.
+* To write a blog series providing insight into the impact of COVID-19 on marketing trends, work with marketing team members, analtyical product developers, product strategy directors to ingest, explore, and package data for insights into the impact of COVID-19 on marketing trends.
  
 ### Digital Health 
 
 #### NYSDOH's AIDS Institute | Digital Health Intern | Jan 2018 - June 2019
-* Created and managed social media strategies for the Y Get It? (YGI) project, which focuses on linking HIV-affected youth to care through a mobile application intervention and a comic serial, “Tested”    
+* Created and managed social media strategies for the Y Get It? (YGI) project, which focuses on linking HIV-affected youth to care through a mobile application intervention and a comic serial, “Tested.”    
 * To improve program evaluation, created web-scraping algorithms and performed quantitative and qualitative analysis on collected social media comment data.
-* Developed and led presentations on new tools and technologies for digital health promotion
+* Developed and led presentations on new tools and technologies for digital health promotion.
 
 ### Research 
 
 #### Lerner Center for Public Health Promotion | Research Fellow | June - Dec 2018
 * Assisted with coding, analyzing, and interpreting point-of-sale advertising data for tobacco products in New York City.
 * Identified research questions, developed survey instruments, and coded data to explore social media advertising for marijuana vaporizer pens.
+* Supported the reviewing and editing of manuscripts for publication.
 
 ###Skills + Publications
 
@@ -56,6 +57,6 @@ title: "Resume"
 *	Brainstormed project execution and wrote HTML in Dash to create a functioning mock-up of the website (domain no longer active).
 
 #### Datakind + Microsoft Virtual DataDive: Applying AI to Societal Challenges in US Cities | Miami Project | Oct. 2019
-*	Member of the Miami Project team, comprised of data science and analysis volunteers in collaboration with the Code for Miami organization to implement AI in Cities 
-*	Engaged in exploratory data analysis, built/tested machine learning models, and stood up an API for the project partner to gain insight from. 
+*	Member of the Miami Project team, comprised of volunteer data scientists and data analysts in collaboration with the Code for Miami organization to implement AI in cities.
+*	Engaged in exploratory data analysis, built/tested machine learning models, and stood up an API for the project partner to understand the variables that impact turnaround time for applications to develop affordable housing. 
 
