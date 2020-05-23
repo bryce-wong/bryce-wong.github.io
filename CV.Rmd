@@ -6,9 +6,9 @@ title: "Resume"
 
 #### Crossix, A Veeva Company | Lead Marketing Data Analyst | June 2019 - Present
 * Own the end-to-end analysis of the effects of life sciences marketing on health behaviors by leveraging a comprehensive data network through Crossix’s privacy-safe technology
-* Oversee the projects of newer analysts through the technical process and communication with collaborating teams
-* Lead the development of Spotfire visualization dashboards, improved agile project management, and troubleshooting/bug-tracking workflows and tools
-* Take point on the ingestion, exploration, and packaging of data for insights into the impact of COVID-19 on marketing trends
+* Responsible for reviewing project deliverables for newer analysts as well as providing guidance on technical, conceptual, and communciation-related processes
+* Lead the development of Spotfire visualization dashboards and improve agile project management along with troubleshooting/bug-tracking workflows
+* Ingest, explore, and package data for insights into the impact of COVID-19 on marketing trends
  
 ### Digital Health 
 
@@ -23,7 +23,7 @@ title: "Resume"
 * Assisted with coding, analyzing, and interpreting point-of-sale advertising data for tobacco products in New York City.
 * Identified research questions, developed survey instruments, and coded data to explore social media advertising for marijuana vaporizer pens.
 
-###Skills
+###Skills + Publications
 
 * Statistical Software: Experienced with SQL, R, Python, SAS
 * Computer: Experienced in Microsoft Word, Excel, and PowerPoint for both Mac and PC; proficient with web development (HTML5 and CSS)
@@ -56,6 +56,6 @@ title: "Resume"
 *	Brainstormed project execution and wrote HTML in Dash to create a functioning mock-up of the website (domain no longer active).
 
 #### Datakind + Microsoft Virtual DataDive: Applying AI to Societal Challenges in US Cities | Miami Project | Oct. 2019
-*	Member of Miami Project team, comprised of data science and analysis volunteers in collaboration with the Code for Miami organization to implement AI in Cities 
+*	Member of the Miami Project team, comprised of data science and analysis volunteers in collaboration with the Code for Miami organization to implement AI in Cities 
 *	Engaged in exploratory data analysis, built/tested machine learning models, and stood up an API for the project partner to gain insight from. 
 
