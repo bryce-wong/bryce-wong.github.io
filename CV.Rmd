@@ -53,7 +53,7 @@ title: "Resume"
 *	Joined the 2020 discussions to help facilitate project management and next steps for future Collabathons.
 
 #### Mount Sinai Health Hackathon 2019 | Team Blackbox AI | Oct. 2019
-*	Designed and created a website that uses video lessons, interactive statistical graphs, and written descriptions to educate clinicians on the application and interpretation of artificial intelligence in healthcare settings.
+*	Designed and created a website that uses video lessons, interactive statistical visualizations, and written descriptions to educate clinicians on the application and interpretation of artificial intelligence in healthcare settings.
 *	Brainstormed project execution and wrote HTML in Dash to create a functioning mock-up of the website (domain no longer active).
 
 #### Datakind + Microsoft Virtual DataDive: Applying AI to Societal Challenges in US Cities | Miami Project | Oct. 2019
