@@ -20,7 +20,10 @@ If you want to reach out and talk more about anything on this site that interest
 
 See my [resume here](CV.html)
 
-By the way, while you're in NYC, [eat here not there](dashboard_template.html) 
+### Selected Projects:
+
+  * [Data Science for Public Health](Final_Report.html) (Team Project)
+  * While you're in NYC, [eat here not there](dashboard_template.html) 
 
 </p>
 

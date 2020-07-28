@@ -9,13 +9,15 @@
 <meta name="generator" content="pandoc" />
 
 
+<meta name="author" content="Briana Lettsome" />
 
+<meta name="date" content="2018-11-19" />
 
-<title>Bryce Wong</title>
+<title>BJL2150_Exploratory_Data_Analysis</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -187,29 +189,14 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="CV.html">Resume</a>
+  <a href="bigpicture.html">Big Picture</a>
 </li>
 <li>
-  <a href="dashboard_template.html">
-    <span class="fa fa-cutlery fa-lg"></span>
-     
-  </a>
+  <a href="subgroup.html">Subgroup Analysis</a>
 </li>
 <li>
-  <a href="mailto:&lt;brycew.hello@gmail.com&gt;">
-    <span class="fa fa-envelope fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://github.com/bryce-wong">
+  <a href="https://github.com/khyu777/p8105_final_project">
     <span class="fa fa-github fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://www.linkedin.com/in/bryce-wong-mph-284219139/">
-    <span class="fa fa-linkedin fa-lg"></span>
      
   </a>
 </li>
@@ -222,32 +209,104 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Bryce Wong</h1>
+<h1 class="title toc-ignore">BJL2150_Exploratory_Data_Analysis</h1>
+<h4 class="author"><em>Briana Lettsome</em></h4>
+<h4 class="date"><em>November 19, 2018</em></h4>
 
 </div>
 
 
-<p>
-<p><img src="images/profile.jpg" style="width:35%; margin-right: 50px" align="left"></p>
-<div id="about-bryce-sheherhers" class="section level3">
-<h3>About Bryce (she/her/hers):</h3>
-<p>MPH graduate and current data analyst at Crossix - passionate about the social dynamics of public health, technology, and data.</p>
-<p>My thesis explores the ethical implications of big data for public health. I propose the use of qualitative research methods to investigate:</p>
-<ul>
-<li>The perceptions and agendas influencing biostatisticians and data scientists working in this field</li>
-<li>How data infrastructures are designed and managed for health technology</li>
-<li>The potential impact of such design and management choices on issues of normalization, oppression, and empowerment</li>
-</ul>
-<p>If you want to reach out and talk more about anything on this site that interests you, you can email me at: <a href="mailto:brycew.hello@gmail.com">brycew.hello@gmail.com</a></p>
-<p>See my <a href="CV.html">resume here</a></p>
+<pre class="r"><code># Reading in of the DOHMH_HIV_AIDS_Annual_Report csv file.
+
+hiv_data = read_csv(file = &quot;./data/DOHMH_HIV_AIDS_Annual_Report.csv&quot;) %&gt;%
+  janitor::clean_names()</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   Year = col_integer(),
+##   Borough = col_character(),
+##   UHF = col_character(),
+##   Gender = col_character(),
+##   Age = col_character(),
+##   Race = col_character(),
+##   `HIV diagnoses` = col_integer(),
+##   `HIV diagnosis rate` = col_double(),
+##   `Concurrent diagnoses` = col_integer(),
+##   `% linked to care within 3 months` = col_integer(),
+##   `AIDS diagnoses` = col_integer(),
+##   `AIDS diagnosis rate` = col_double(),
+##   `PLWDHI prevalence` = col_double(),
+##   `% viral suppression` = col_integer(),
+##   Deaths = col_integer(),
+##   `Death rate` = col_double(),
+##   `HIV-related death rate` = col_double(),
+##   `Non-HIV-related death rate` = col_double()
+## )</code></pre>
+<pre class="r"><code>hiv = hiv_data %&gt;%
+  filter(borough == &quot;All&quot;) %&gt;%
+  select(year, race, hiv_diagnosis_rate, gender) %&gt;%
+  filter(!race == &quot;All&quot;)
+
+ # Spaghetti Plot showing the HIV Diagnosis Rates per race, faceted by gender.
+
+hiv %&gt;%
+  ggplot(aes(x = year, y = hiv_diagnosis_rate, color = race, group = race)) +
+  geom_line() +
+  facet_grid(~gender) +
+   labs(
+    title = &quot;HIV Diagnosis Rates by Race&quot;,
+    x = &quot;Year&quot;,
+    y = &quot;HIV Diagnosis Rates&quot;,
+    caption = &quot;Data from the NYCDOHMH&quot;
+  )</code></pre>
+<p><img src="BJL2150_Exploratory_Data_Analysis_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>Other/Unknown category includes people of Native American, multiracial, and unknown races.</p>
+<div id="plwdhi-prevalence" class="section level1">
+<h1>PLWDHI prevalence</h1>
+<pre class="r"><code>  race_prevalence = hiv_data %&gt;%
+    select(age,plwdhi_prevalence, year, uhf, gender, borough, race) %&gt;%
+    filter(uhf ==&quot;All&quot;) %&gt;%
+  filter(!race == &quot;All&quot;) %&gt;%
+  filter(borough == &quot;All&quot;) %&gt;%
+  select(-age, -uhf, -borough)
+
+ two_race_prevalence = hiv_data %&gt;%
+    select(age,plwdhi_prevalence, year, uhf, gender, borough, race) %&gt;%
+    filter(uhf ==&quot;All&quot;) %&gt;%
+  filter(!race == &quot;All&quot;) %&gt;%
+  filter(borough == &quot;All&quot;) %&gt;%
+  select(-age, -uhf, -borough)
+
+  
+  ggplot(race_prevalence, aes(x = year, fill = race)) + 
+  geom_histogram(position = &quot;dodge&quot;, binwidth = 2) +
+    facet_grid(~ gender)</code></pre>
+<p><img src="BJL2150_Exploratory_Data_Analysis_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code>race_prevalence %&gt;%
+  ggplot(aes(x = year, y = plwdhi_prevalence, color = race)) + 
+  geom_line() +
+  facet_grid(~gender)</code></pre>
+<p><img src="BJL2150_Exploratory_Data_Analysis_files/figure-html/unnamed-chunk-3-2.png" width="672" /></p>
+<div id="prevalence-by-borough" class="section level2">
+<h2>Prevalence by borough</h2>
+<p>Making of spaghetti plot showing persons diagnosed HIV infection by borough over the years.</p>
+<pre class="r"><code> borough_prevalence = hiv_data %&gt;%
+    select(age,plwdhi_prevalence, year, borough, uhf, gender, race) %&gt;%
+    filter(uhf ==&quot;All&quot;) %&gt;%
+   filter(race == &quot;All&quot;) %&gt;%
+   filter(gender == &quot;All&quot;) %&gt;%
+   filter(!borough == &quot;All&quot;) %&gt;%
+  group_by(year, borough)
+
+borough_prevalence %&gt;%
+  ggplot(aes(x = year, y = plwdhi_prevalence, color = borough)) + 
+  geom_line() </code></pre>
+<p><img src="BJL2150_Exploratory_Data_Analysis_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>EDAs to keep:</p>
+<p>Bryce - Bar graph - Death rate type over the years Death rate line graph - Will talk about in paper but not include Percent viral suppression by race and faceted by gender</p>
+<p>Briana- HIV diagnosis rates by race and faceted by gender (can link this with Bryce’s percent viral suppression by race and gender)</p>
+<p>Noah - HIV diagnosis by borough</p>
+<p>David - HIV diagnosis rates by age and faceted by gender</p>
 </div>
-<div id="selected-projects" class="section level3">
-<h3>Selected Projects:</h3>
-<ul>
-<li><a href="Final_Report.html">Data Science for Public Health</a> (Team Project)</li>
-<li>While you’re in NYC, <a href="dashboard_template.html">eat here not there</a></li>
-</ul>
-</p>
 </div>
 
 

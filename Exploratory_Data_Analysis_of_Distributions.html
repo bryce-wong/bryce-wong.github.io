@@ -11,20 +11,17 @@
 
 
 
-<title>Bryce Wong</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -187,29 +184,14 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="CV.html">Resume</a>
+  <a href="bigpicture.html">Big Picture</a>
 </li>
 <li>
-  <a href="dashboard_template.html">
-    <span class="fa fa-cutlery fa-lg"></span>
-     
-  </a>
+  <a href="subgroup.html">Subgroup Analysis</a>
 </li>
 <li>
-  <a href="mailto:&lt;brycew.hello@gmail.com&gt;">
-    <span class="fa fa-envelope fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://github.com/bryce-wong">
+  <a href="https://github.com/khyu777/p8105_final_project">
     <span class="fa fa-github fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://www.linkedin.com/in/bryce-wong-mph-284219139/">
-    <span class="fa fa-linkedin fa-lg"></span>
      
   </a>
 </li>
@@ -222,32 +204,56 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Bryce Wong</h1>
 
 </div>
 
 
-<p>
-<p><img src="images/profile.jpg" style="width:35%; margin-right: 50px" align="left"></p>
-<div id="about-bryce-sheherhers" class="section level3">
-<h3>About Bryce (she/her/hers):</h3>
-<p>MPH graduate and current data analyst at Crossix - passionate about the social dynamics of public health, technology, and data.</p>
-<p>My thesis explores the ethical implications of big data for public health. I propose the use of qualitative research methods to investigate:</p>
-<ul>
-<li>The perceptions and agendas influencing biostatisticians and data scientists working in this field</li>
-<li>How data infrastructures are designed and managed for health technology</li>
-<li>The potential impact of such design and management choices on issues of normalization, oppression, and empowerment</li>
-</ul>
-<p>If you want to reach out and talk more about anything on this site that interests you, you can email me at: <a href="mailto:brycew.hello@gmail.com">brycew.hello@gmail.com</a></p>
-<p>See my <a href="CV.html">resume here</a></p>
+<div id="exploratory-data-analysis-of-distributions" class="section level1">
+<h1>Exploratory Data Analysis of Distributions</h1>
+<p>Briana Lettsome November 19, 2018</p>
+<pre class="r"><code># Reading in of the DOHMH_HIV_AIDS_Annual_Report csv file.
+
+hiv_data = read_csv(file = &quot;./data/DOHMH_HIV_AIDS_Annual_Report.csv&quot;) %&gt;%
+  janitor::clean_names()</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   Year = col_integer(),
+##   Borough = col_character(),
+##   UHF = col_character(),
+##   Gender = col_character(),
+##   Age = col_character(),
+##   Race = col_character(),
+##   `HIV diagnoses` = col_integer(),
+##   `HIV diagnosis rate` = col_double(),
+##   `Concurrent diagnoses` = col_integer(),
+##   `% linked to care within 3 months` = col_integer(),
+##   `AIDS diagnoses` = col_integer(),
+##   `AIDS diagnosis rate` = col_double(),
+##   `PLWDHI prevalence` = col_double(),
+##   `% viral suppression` = col_integer(),
+##   Deaths = col_integer(),
+##   `Death rate` = col_double(),
+##   `HIV-related death rate` = col_double(),
+##   `Non-HIV-related death rate` = col_double()
+## )</code></pre>
+<pre class="r"><code>hiv = hiv_data %&gt;%
+  filter(borough == &quot;All&quot;) %&gt;%
+  select(year, race, hiv_diagnosis_rate, gender) %&gt;%
+  filter(!race == &quot;All&quot;)
+
+ # Spaghetti Plot showing the HIV Diagnosis Rates per race, faceted by gender.
+
+hiv %&gt;%
+  ggplot(aes(x = year, y = hiv_diagnosis_rate, color = race, group = race)) +
+  geom_line() +
+  facet_grid(~gender)</code></pre>
+<div class="figure">
+<img src="Exploratory_Data_Analysis_of_Distributions_files/figure-markdown_github/unnamed-chunk-2-1.png" />
+
 </div>
-<div id="selected-projects" class="section level3">
-<h3>Selected Projects:</h3>
-<ul>
-<li><a href="Final_Report.html">Data Science for Public Health</a> (Team Project)</li>
-<li>While you’re in NYC, <a href="dashboard_template.html">eat here not there</a></li>
-</ul>
-</p>
+</div>
+<div id="otherunknown-category-includes-people-of-native-american-multiracial-and-unknown-races." class="section level1">
+<h1>Other/Unknown category includes people of Native American, multiracial, and unknown races.</h1>
 </div>
 
 
