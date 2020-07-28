@@ -5,8 +5,8 @@ navbar:
   right:
     - text: "Resume"
       href: CV.html
-    - icon: fa-cutlery fa-lg
-      href: dashboard_template.html
+    - text: "Projects"
+      href: Projects.html
     - icon: fa-envelope fa-lg
       href: mailto:<brycew.hello@gmail.com>
     - icon: fa-github fa-lg

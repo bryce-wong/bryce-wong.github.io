@@ -1,0 +1,14 @@
+---
+title: "Projects"
+---
+
+### Selected Projects:
+
+  * [Identification of trends and disparities in HIV/AIDS for NYC](Final_Report.html) (Team Project)
+    * Final project as part of my data science course in my graduate program.
+    * Motivated by Governor Cuomo’s initiative for ending the AIDS epidemic in New York State by 2020 (ETE 2020), we aimed to identify key vulnerable populations in New York City (NYC) disproportionately burdened by HIV/AIDS in order to improve interventions implemented under this initiative. 
+    * To that end, we utilized annual HIV/AIDS reports from NYC through the NYC Open Data database, as well as supplementary NYC geographic information. Our analyses focusrf on exploring potential health disparities across geographic and sociodemographic variables as well as understanding the current trends for HIV/AIDS across time and in relation to comorbidities, in order to understand the current state and effectiveness of HIV/AIDS interventions in NYC.
+    
+    
+  * While you're in NYC, [eat here not there](dashboard_template.html) 
+    * A dashboard created using flexdashboard to let you know how restaurants in NYC are keeping up with health regulations.
