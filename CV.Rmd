@@ -47,7 +47,7 @@ title: "Resume"
 ### Hackathons
 
 #### Open Climate Collabathon 2019 | [Consumer Disclosure Team](https://collabathon-docs.openclimate.earth/hacks/team-contributions/consumer-disclosure-and-sustainable-supply-chains) | Dec. 2019
-*	Winner of the Community Choice award and the Most Innovative Contribution Award.
+*	Winner of the Community Choice award and the Most Innovative Contribution award.
 *	Outlined a framework for developing and reporting a "sustainability score" that would be used to grade the supply chain of a consumer product. The team also developed a proof-of-concept widget that could be added as a browser extension to report these scores on consumer websites.
 *	Contributed to the writing of the overarching framework and helped generate an example of an application for the project (the iPhone). 
 *	Joined the 2020 discussions to help facilitate project management and next steps for future Collabathons.
