@@ -8,7 +8,7 @@ output:
 
 ### Health + Data 
 
-#### Crossix, A Veeva Company | Senior Marketing Data Analyst | June 2019 - Present
+#### Crossix, A Veeva Company | Senior Analyst, Marketing Analytics | June 2019 - Present
 * Own the end-to-end analysis of the effects of life sciences marketing on health behaviors by leveraging a comprehensive EHR, pharmacy, and claims data network through Crossix’s privacy-safe technology, SQL, and Apache Spark.
 * Responsible for reviewing project deliverables for newer analysts, as well as for providing guidance on technical, conceptual, and communication-related processes.
 * Lead the development of Spotfire visualization dashboards for internal deliverables, more efficient troubleshooting/bug-tracking workflows by founding a troubleshooting taskforce, and improved agile project management workflows (in JIRA).
