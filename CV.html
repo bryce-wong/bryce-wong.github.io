@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -169,6 +172,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -226,13 +324,13 @@ $(document).ready(function () {
 
 <div id="health-data" class="section level3">
 <h3>Health + Data</h3>
-<div id="crossix-a-veeva-company-lead-marketing-data-analyst-june-2019---present" class="section level4">
-<h4>Crossix, A Veeva Company | Lead Marketing Data Analyst | June 2019 - Present</h4>
+<div id="crossix-a-veeva-company-senior-marketing-data-analyst-june-2019---present" class="section level4">
+<h4>Crossix, A Veeva Company | Senior Marketing Data Analyst | June 2019 - Present</h4>
 <ul>
-<li>Own the end-to-end analysis of the effects of life sciences marketing on health behaviors by leveraging a comprehensive data network through Crossix’s privacy-safe technology.</li>
+<li>Own the end-to-end analysis of the effects of life sciences marketing on health behaviors by leveraging a comprehensive EHR, pharmacy, and claims data network through Crossix’s privacy-safe technology, SQL, and Apache Spark.</li>
 <li>Responsible for reviewing project deliverables for newer analysts, as well as for providing guidance on technical, conceptual, and communication-related processes.</li>
-<li>Lead the development of Spotfire visualization dashboards, improved agile project management systems, and more efficient troubleshooting/bug-tracking workflows.</li>
-<li>For industry thought leadership posts providing insight into the impact of COVID-19 on marketing trends, collaborate with marketing team members, analytical product developers, and product strategy directors to ingest, explore, and visualize data.</li>
+<li>Lead the development of Spotfire visualization dashboards for internal deliverables, more efficient troubleshooting/bug-tracking workflows by founding a troubleshooting taskforce, and improved agile project management workflows (in JIRA).</li>
+<li>Collaborate with marketing team members, analytical product developers, and product strategy directors to ingest, explore, and visualize data for industry thought leadership posts providing insight into the impact of COVID-19 on marketing trends.</li>
 </ul>
 </div>
 </div>
@@ -243,7 +341,7 @@ $(document).ready(function () {
 <ul>
 <li>Created and managed social media strategies for the Y Get It? (YGI) project, which focuses on linking HIV-affected youth to care through a mobile application intervention and a comic serial, “Tested.”<br />
 </li>
-<li>To improve program evaluation, created web-scraping algorithms and performed quantitative and qualitative analysis on collected social media comment data.</li>
+<li>To improve program evaluation, created web-scraping algorithms in R and performed quantitative and qualitative analysis on collected social media comment data.</li>
 <li>Developed and led presentations on new tools and technologies for digital health promotion.</li>
 </ul>
 </div>
@@ -253,7 +351,7 @@ $(document).ready(function () {
 <div id="lerner-center-for-public-health-promotion-research-fellow-june---dec-2018" class="section level4">
 <h4>Lerner Center for Public Health Promotion | Research Fellow | June - Dec 2018</h4>
 <ul>
-<li>Assisted with coding, analyzing, and interpreting point-of-sale advertising data for tobacco products in New York City.</li>
+<li>Assisted with coding, analyzing (in SAS), and interpreting point-of-sale advertising data for tobacco products in New York City.</li>
 <li>Identified research questions, developed survey instruments, and coded data to explore social media advertising for marijuana vaporizer pens.</li>
 <li>Supported the reviewing and editing of manuscripts for publication.</li>
 </ul>
@@ -263,7 +361,7 @@ $(document).ready(function () {
 <h3>Skills + Publications</h3>
 <ul>
 <li>Statistical Software: Experienced with SQL, R, Python, SAS</li>
-<li>Computer: Experienced in Microsoft Word, Excel, and PowerPoint for both Mac and PC; proficient with web development (HTML5 and CSS)</li>
+<li>Computer: Experienced in Microsoft Word, Excel, and PowerPoint for both Mac and PC; Experienced with project management in JIRA and Confluence from the Atlassian product suite; proficient with web development (HTML5 and CSS) and Spotfire dashboard development</li>
 <li>Research Experience: Experienced in conducting literature reviews, writing research proposals, and collecting and analyzing data</li>
 <li>Peer-reviewed journal publications: <em>Giovenco, D.P., Spillane, T.E., Wong, B.A., Wackowski, O.A. (2019). Characteristics of storefront tobacco advertisements and differences by product type: A content analysis of retailers in New York City, USA. Preventive Medicine, 123, 204-207.</em></li>
 </ul>
@@ -310,13 +408,15 @@ $(document).ready(function () {
 <h4>Datakind + Microsoft Virtual DataDive: Applying AI to Societal Challenges in US Cities | Miami Project | Oct. 2019</h4>
 <ul>
 <li>Member of the Miami Project team, comprised of volunteer data scientists and data analysts in collaboration with the Code for Miami organization to implement AI in cities.</li>
-<li>Engaged in exploratory data analysis, built/tested machine learning models, and stood up an API for the project partner to understand the variables that impact turnaround time for applications to develop affordable housing.</li>
+<li>Engaged in exploratory data analysis using ggplot and tidyverse in R, as well as built/tested machine learning models using pandas and scikit-learn in Python. Also assisted with standing up an API for the project partner to understand the variables that impact turnaround time for applications to develop affordable housing.</li>
 </ul>
 </div>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 

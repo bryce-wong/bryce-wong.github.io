@@ -1,21 +1,44 @@
 ---
 title: "Projects"
+output:
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
-### Selected Projects:
+### AI for Cities with DataKind Volunteers
 
-  * [Identification of trends and disparities in HIV/AIDS for NYC](Final_Report.html) (Team Project)
+  * [Datakind + Microsoft Virtual DataDive: Applying AI to Societal Challenges in US Cities | Miami Project](https://www.datakind.org/blog/applying-ai-to-societal-challenges-in-cities-communities-highlights-from-datakinds-virtual-datadive)
+    * <b>Background</b>: Code for Miami and the city of Miami aim to increase affordable housing by making the process of applying and building these units more transparent and user-friendly. Code for Miami developed gethousing.org to map existing units and eventually allow developers to track applications. The goal of our team was to show how AI can improve the interaction that developers have with the application process on the site, ultimately increasing the motivation to build more affordable housing.
+    * <b>What we did</b>: In a team of 22, from all over the globe, we spent 9 hours developing a model that would be able to predict how long a permit would be in review (ultimately allowing developers to understand and plan for the review process better). We also prototyped an API that could be used on the gethousing.org website to show users their estimated time in review. The event culminated in a presentation to the rest of the DataDive teams, sharing our project and findings.
+    *	<b>How we did it</b>: As part of the team, I used ggplot and tidyverse to visualize potential variable relationships in R, then used pandas and scikit-learn in Python to build/test machine learning models (including linear regression, ridge regression, and lasso regression). After identifying several key variables and testing various machine learning algorithms, we were able to generate a gradient boosted decision tree model with an r-squared of 0.62 for use in an API.
+  
+    
+### Using Plot.ly to Visualize HIV/AIDS Trends in NYC
+
+  * [Identification of trends and disparities in HIV/AIDS for NYC](Final_Report.html) 
     * Final project as part of my data science course in my graduate program.
-    * Motivated by Governor Cuomo’s initiative for ending the AIDS epidemic in New York State by 2020 (ETE 2020), we aimed to identify key vulnerable populations in New York City (NYC) disproportionately burdened by HIV/AIDS in order to improve interventions implemented under this initiative. 
-    * To that end, we utilized annual HIV/AIDS reports from NYC through the NYC Open Data database, as well as supplementary NYC geographic information. Our analyses focusrf on exploring potential health disparities across geographic and sociodemographic variables as well as understanding the current trends for HIV/AIDS across time and in relation to comorbidities, in order to understand the current state and effectiveness of HIV/AIDS interventions in NYC.
+    * <b>Background</b>: Motivated by Governor Cuomo’s initiative for ending the AIDS epidemic in New York State by 2020 (ETE 2020), we aimed to identify key vulnerable populations in New York City (NYC) disproportionately burdened by HIV/AIDS in order to improve interventions implemented under this initiative.
+    * <b>What we did</b>: To that end, we utilized annual HIV/AIDS reports from NYC through the NYC Open Data database, as well as supplementary NYC geographic information. Our analyses focus on exploring potential health disparities across geographic and sociodemographic variables, as well as understanding the current trends for HIV/AIDS across time and in relation to comorbidities. We then wrote a report to discuss the current state and effectiveness of HIV/AIDS interventions in NYC.
+    * <b>How we did it</b>: Using the tidyverse and plot.ly, I wrote the "Big Picture" page of the report. By exploring HIV death rates over time and across boroughs, I drew interpretations from the visualizations and connected the findings to next steps for the ETE 2020 initiative.
     
-  * [Open Climate Collabathon 2019](https://collabathon-docs.openclimate.earth/hacks/team-contributions/consumer-disclosure-and-sustainable-supply-chains)
-    * I was a member of the Consumer Disclosure team (winner of the Most Innovative Contribution award), with my main involvement being the research and design of a framework that could support a "Sustainability Score" for online marketplaces.
-    * I worked with a cross-disciplinary group (all remoting in from around the world) and eventually reconnected with several team members to help launch/guide the next iteration of consumer-focused projects in the 2020 Collabathon.
-    * The scope and output of this project are documented on the Collabathon's gitbook (linked above).
+### Using Dash to create an interactive, educational website for clinicians to learn about AI 
+  * [Competing in the Mount Sinai Health Hackathon 2019](https://health.mountsinai.org/health-hackathon/)
+    *	<b>Background</b>: The Mount Sinai Health Hackathon brings together interdisciplinary teams to discover novel technology-based solutions for healthcare. The theme for 2019 was Artificial Intelligence - Expanding the Limits of Human Performance. 
+    * <b>What we did</b>: Team Blackbox AI was focused on addressing the fundamental discrepancy between AI solutions designed for healthcare and the way in which clinicians and healthcare practitioners actually understand and use AI tools. We saw that there was a high barrier to access when it came to learning how to interpret AI, as well as general distrust in what AI could do for clinical work. Our solution was to design and create a website that uses video lessons, interactive statistical visualizations, and written descriptions to educate clinicians on the application and interpretation of artificial intelligence in healthcare settings.
+    *	<b>How we did it</b>: I brainstored project goals and potential execution plans, coming up with content ideas and marketing perspectives. I also took point on learning how to use Dash to create a functioning mock-up of the website (domain no longer active). I incorporated the lesson plans and educational material created by the group into several interactive webpages that could be easily navigated and visually appealing.
+  
+### Researching + Writing a Logistical Framework for Sustainable Commerce
 
+  * [Open Climate Collabathon 2019](https://collabathon-docs.openclimate.earth/hacks/team-contributions/consumer-disclosure-and-sustainable-supply-chains)
+    * <b>Background</b>: I was a member of the Consumer Disclosure team (winner of the Most Innovative Contribution award), who set out to create a "Sustainability Score" that would assess all the entire supply chain of a product and weigh various factors to produce an intuitive score for a consumer item Consumers could then use this score to gauge how the environmental impact of a product.
+    * <b>What we did</b>: I worked with a cross-disciplinary group (all remoting in from around the world) and eventually reconnected with several team members to help launch/guide the next iteration of consumer-focused projects in the 2020 Collabathon. I was a key contributer to the research, design, and write-up of a theoretical framework that could support a "Sustainability Score" for online marketplaces.
+    * <b>How we did it</b>: The scope and output of this project are documented on the Collabathon's gitbook (linked above).
+
+### Exploring Restaurant Health Codes in NYC with Flexdashboard
     
-  * While you're in NYC, [eat here not there](dashboard_template.html) 
-    * A dashboard created using flexdashboard to let you know how restaurants in NYC are keeping up with health regulations.
+  * <b>Background</b>: To build my knowledge of visualizations in R, including how to integrate flexdashboard into websites, I decided to investigate where is safe to eat while in NYC.
+  * <b>What we did</b>: Using open data provided by the NYC government, I created a dashboard created using flexdashboard in R to let you know how restaurants in NYC are keeping up with health regulations.
+  * <b>How we did it</b>: [Eat here not there](dashboard_template.html) 
     
   

@@ -1,33 +1,37 @@
 ---
 title: "Resume"
+output:
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
 ### Health + Data 
 
-#### Crossix, A Veeva Company | Lead Marketing Data Analyst | June 2019 - Present
-* Own the end-to-end analysis of the effects of life sciences marketing on health behaviors by leveraging a comprehensive data network through Crossix’s privacy-safe technology.
+#### Crossix, A Veeva Company | Senior Marketing Data Analyst | June 2019 - Present
+* Own the end-to-end analysis of the effects of life sciences marketing on health behaviors by leveraging a comprehensive EHR, pharmacy, and claims data network through Crossix’s privacy-safe technology, SQL, and Apache Spark.
 * Responsible for reviewing project deliverables for newer analysts, as well as for providing guidance on technical, conceptual, and communication-related processes.
-* Lead the development of Spotfire visualization dashboards, improved agile project management systems, and more efficient troubleshooting/bug-tracking workflows.
-* For industry thought leadership posts providing insight into the impact of COVID-19 on marketing trends, collaborate with marketing team members, analytical product developers, and product strategy directors to ingest, explore, and visualize data.
+* Lead the development of Spotfire visualization dashboards for internal deliverables, more efficient troubleshooting/bug-tracking workflows by founding a troubleshooting taskforce, and improved agile project management workflows (in JIRA).
+* Collaborate with marketing team members, analytical product developers, and product strategy directors to ingest, explore, and visualize data for industry thought leadership posts providing insight into the impact of COVID-19 on marketing trends.
  
 ### Digital Health 
 
 #### NYSDOH's AIDS Institute | Digital Health Intern | Jan 2018 - June 2019
 * Created and managed social media strategies for the Y Get It? (YGI) project, which focuses on linking HIV-affected youth to care through a mobile application intervention and a comic serial, “Tested.”    
-* To improve program evaluation, created web-scraping algorithms and performed quantitative and qualitative analysis on collected social media comment data.
+* To improve program evaluation, created web-scraping algorithms in R and performed quantitative and qualitative analysis on collected social media comment data.
 * Developed and led presentations on new tools and technologies for digital health promotion.
 
 ### Research 
 
 #### Lerner Center for Public Health Promotion | Research Fellow | June - Dec 2018
-* Assisted with coding, analyzing, and interpreting point-of-sale advertising data for tobacco products in New York City.
+* Assisted with coding, analyzing (in SAS), and interpreting point-of-sale advertising data for tobacco products in New York City.
 * Identified research questions, developed survey instruments, and coded data to explore social media advertising for marijuana vaporizer pens.
 * Supported the reviewing and editing of manuscripts for publication.
 
 ###Skills + Publications
 
 * Statistical Software: Experienced with SQL, R, Python, SAS
-* Computer: Experienced in Microsoft Word, Excel, and PowerPoint for both Mac and PC; proficient with web development (HTML5 and CSS)
+* Computer: Experienced in Microsoft Word, Excel, and PowerPoint for both Mac and PC; Experienced with project management in JIRA and Confluence from the Atlassian product suite; proficient with web development (HTML5 and CSS) and Spotfire dashboard development
 * Research Experience: Experienced in conducting literature reviews, writing research proposals, and collecting and analyzing data
 * Peer-reviewed journal publications: *Giovenco, D.P., Spillane, T.E., Wong, B.A., Wackowski, O.A. (2019). Characteristics of storefront tobacco advertisements and differences by product type: A content analysis of retailers in New York City, USA. Preventive Medicine, 123, 204-207.*
 
@@ -58,5 +62,5 @@ title: "Resume"
 
 #### Datakind + Microsoft Virtual DataDive: Applying AI to Societal Challenges in US Cities | Miami Project | Oct. 2019
 *	Member of the Miami Project team, comprised of volunteer data scientists and data analysts in collaboration with the Code for Miami organization to implement AI in cities.
-*	Engaged in exploratory data analysis, built/tested machine learning models, and stood up an API for the project partner to understand the variables that impact turnaround time for applications to develop affordable housing. 
+* Engaged in exploratory data analysis using ggplot and tidyverse in R, as well as built/tested machine learning models using pandas and scikit-learn in Python. Also assisted with standing up an API for the project partner to understand the variables that impact turnaround time for applications to develop affordable housing. 
 

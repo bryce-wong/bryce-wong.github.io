@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -169,6 +172,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -224,30 +322,64 @@ $(document).ready(function () {
 </div>
 
 
-<div id="selected-projects" class="section level3">
-<h3>Selected Projects:</h3>
+<div id="ai-for-cities-with-datakind-volunteers" class="section level3">
+<h3>AI for Cities with DataKind Volunteers</h3>
 <ul>
-<li><a href="Final_Report.html">Identification of trends and disparities in HIV/AIDS for NYC</a> (Team Project)
+<li><a href="https://www.datakind.org/blog/applying-ai-to-societal-challenges-in-cities-communities-highlights-from-datakinds-virtual-datadive">Datakind + Microsoft Virtual DataDive: Applying AI to Societal Challenges in US Cities | Miami Project</a>
+<ul>
+<li><b>Background</b>: Code for Miami and the city of Miami aim to increase affordable housing by making the process of applying and building these units more transparent and user-friendly. Code for Miami developed gethousing.org to map existing units and eventually allow developers to track applications. The goal of our team was to show how AI can improve the interaction that developers have with the application process on the site, ultimately increasing the motivation to build more affordable housing.</li>
+<li><b>What we did</b>: In a team of 22, from all over the globe, we spent 9 hours developing a model that would be able to predict how long a permit would be in review (ultimately allowing developers to understand and plan for the review process better). We also prototyped an API that could be used on the gethousing.org website to show users their estimated time in review. The event culminated in a presentation to the rest of the DataDive teams, sharing our project and findings.</li>
+<li><b>How we did it</b>: As part of the team, I used ggplot and tidyverse to visualize potential variable relationships in R, then used pandas and scikit-learn in Python to build/test machine learning models (including linear regression, ridge regression, and lasso regression). After identifying several key variables and testing various machine learning algorithms, we were able to generate a gradient boosted decision tree model with an r-squared of 0.62 for use in an API.</li>
+</ul></li>
+</ul>
+</div>
+<div id="using-plot.ly-to-visualize-hivaids-trends-in-nyc" class="section level3">
+<h3>Using Plot.ly to Visualize HIV/AIDS Trends in NYC</h3>
+<ul>
+<li><a href="Final_Report.html">Identification of trends and disparities in HIV/AIDS for NYC</a>
 <ul>
 <li>Final project as part of my data science course in my graduate program.</li>
-<li>Motivated by Governor Cuomo’s initiative for ending the AIDS epidemic in New York State by 2020 (ETE 2020), we aimed to identify key vulnerable populations in New York City (NYC) disproportionately burdened by HIV/AIDS in order to improve interventions implemented under this initiative.</li>
-<li>To that end, we utilized annual HIV/AIDS reports from NYC through the NYC Open Data database, as well as supplementary NYC geographic information. Our analyses focusrf on exploring potential health disparities across geographic and sociodemographic variables as well as understanding the current trends for HIV/AIDS across time and in relation to comorbidities, in order to understand the current state and effectiveness of HIV/AIDS interventions in NYC.</li>
+<li><b>Background</b>: Motivated by Governor Cuomo’s initiative for ending the AIDS epidemic in New York State by 2020 (ETE 2020), we aimed to identify key vulnerable populations in New York City (NYC) disproportionately burdened by HIV/AIDS in order to improve interventions implemented under this initiative.</li>
+<li><b>What we did</b>: To that end, we utilized annual HIV/AIDS reports from NYC through the NYC Open Data database, as well as supplementary NYC geographic information. Our analyses focus on exploring potential health disparities across geographic and sociodemographic variables, as well as understanding the current trends for HIV/AIDS across time and in relation to comorbidities. We then wrote a report to discuss the current state and effectiveness of HIV/AIDS interventions in NYC.</li>
+<li><b>How we did it</b>: Using the tidyverse and plot.ly, I wrote the “Big Picture” page of the report. By exploring HIV death rates over time and across boroughs, I drew interpretations from the visualizations and connected the findings to next steps for the ETE 2020 initiative.</li>
 </ul></li>
+</ul>
+</div>
+<div id="using-dash-to-create-an-interactive-educational-website-for-clinicians-to-learn-about-ai" class="section level3">
+<h3>Using Dash to create an interactive, educational website for clinicians to learn about AI</h3>
+<ul>
+<li><a href="https://health.mountsinai.org/health-hackathon/">Competing in the Mount Sinai Health Hackathon 2019</a>
+<ul>
+<li><b>Background</b>: The Mount Sinai Health Hackathon brings together interdisciplinary teams to discover novel technology-based solutions for healthcare. The theme for 2019 was Artificial Intelligence - Expanding the Limits of Human Performance.</li>
+<li><b>What we did</b>: Team Blackbox AI was focused on addressing the fundamental discrepancy between AI solutions designed for healthcare and the way in which clinicians and healthcare practitioners actually understand and use AI tools. We saw that there was a high barrier to access when it came to learning how to interpret AI, as well as general distrust in what AI could do for clinical work. Our solution was to design and create a website that uses video lessons, interactive statistical visualizations, and written descriptions to educate clinicians on the application and interpretation of artificial intelligence in healthcare settings.</li>
+<li><b>How we did it</b>: I brainstored project goals and potential execution plans, coming up with content ideas and marketing perspectives. I also took point on learning how to use Dash to create a functioning mock-up of the website (domain no longer active). I incorporated the lesson plans and educational material created by the group into several interactive webpages that could be easily navigated and visually appealing.</li>
+</ul></li>
+</ul>
+</div>
+<div id="researching-writing-a-logistical-framework-for-sustainable-commerce" class="section level3">
+<h3>Researching + Writing a Logistical Framework for Sustainable Commerce</h3>
+<ul>
 <li><a href="https://collabathon-docs.openclimate.earth/hacks/team-contributions/consumer-disclosure-and-sustainable-supply-chains">Open Climate Collabathon 2019</a>
 <ul>
-<li>I was a member of the Consumer Disclosure team (winner of the Most Innovative Contribution award), with my main involvement being the research and design of a framework that could support a “Sustainability Score” for online marketplaces.</li>
-<li>I worked with a cross-disciplinary group (all remoting in from around the world) and eventually reconnected with several team members to help launch/guide the next iteration of consumer-focused projects in the 2020 Collabathon.</li>
-<li>The scope and output of this project are documented on the Collabathon’s gitbook (linked above).</li>
+<li><b>Background</b>: I was a member of the Consumer Disclosure team (winner of the Most Innovative Contribution award), who set out to create a “Sustainability Score” that would assess all the entire supply chain of a product and weigh various factors to produce an intuitive score for a consumer item Consumers could then use this score to gauge how the environmental impact of a product.</li>
+<li><b>What we did</b>: I worked with a cross-disciplinary group (all remoting in from around the world) and eventually reconnected with several team members to help launch/guide the next iteration of consumer-focused projects in the 2020 Collabathon. I was a key contributer to the research, design, and write-up of a theoretical framework that could support a “Sustainability Score” for online marketplaces.</li>
+<li><b>How we did it</b>: The scope and output of this project are documented on the Collabathon’s gitbook (linked above).</li>
 </ul></li>
-<li>While you’re in NYC, <a href="dashboard_template.html">eat here not there</a>
+</ul>
+</div>
+<div id="exploring-restaurant-health-codes-in-nyc-with-flexdashboard" class="section level3">
+<h3>Exploring Restaurant Health Codes in NYC with Flexdashboard</h3>
 <ul>
-<li>A dashboard created using flexdashboard to let you know how restaurants in NYC are keeping up with health regulations.</li>
-</ul></li>
+<li><b>Background</b>: To build my knowledge of visualizations in R, including how to integrate flexdashboard into websites, I decided to investigate where is safe to eat while in NYC.</li>
+<li><b>What we did</b>: Using open data provided by the NYC government, I created a dashboard created using flexdashboard in R to let you know how restaurants in NYC are keeping up with health regulations.</li>
+<li><b>How we did it</b>: <a href="dashboard_template.html">Eat here not there</a></li>
 </ul>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
