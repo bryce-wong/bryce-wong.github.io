@@ -17,8 +17,8 @@ output:
 ### Digital Health 
 
 #### NYSDOH's AIDS Institute | Digital Health Intern | Jan 2018 - June 2019
-* Created and managed social media strategies for the Y Get It? (YGI) project, which focuses on linking HIV-affected youth to care through a mobile application intervention and a comic serial, “Tested.”    
-* To improve program evaluation, created web-scraping algorithms in R and performed quantitative and qualitative analysis on collected social media comment data.
+* Scraped/analyzed comments from an online forum with R to assess the impact of a web-based comic, “Tested,” that aims to educate young readers about health topics. Used tidyverse, ggplot, and tidytext to visualize and aggregate insights into markdown reports.
+* Created and managed social media strategies for the Y Get It? (YGI) project, which focuses on linking HIV-affected youth to care through a mobile application intervention and the comic serial.    
 * Developed and led presentations on new tools and technologies for digital health promotion.
 
 ### Research 

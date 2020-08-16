@@ -40,5 +40,8 @@ output:
   * <b>Background</b>: To build my knowledge of visualizations in R, including how to integrate flexdashboard into websites, I decided to investigate where is safe to eat while in NYC.
   * <b>What we did</b>: Using open data provided by the NYC government, I created a dashboard created using flexdashboard in R to let you know how restaurants in NYC are keeping up with health regulations.
   * <b>How we did it</b>: [Eat here not there](dashboard_template.html) 
+  
+### Exploratory Data Analysis of Text Comments on a Web-Based Health Comic
+ * <b> Coming soon! </b>
     
   
