@@ -37,13 +37,13 @@ output:
 
 ### Education
 
-#### Master of Public Health | May 2019 | Columbia University Mailman SPH
+#### Master of Public Health | Columbia University Mailman SPH
 * Department: Sociomedical Sciences
 * Certificate: Applied Biostatistics
 * Awards: Dr. Jack Elinson Scholarship recipient
 * Thesis: *How Data Determines Health: A Qualitative Research Proposal Exploring Perceptions of Big Data in Public Health*
 
-#### Bachelor of Science | March 2017 | University of California, Los Angeles
+#### Bachelor of Science | University of California, Los Angeles
 * Major: Cognitive Science
 * Specialization in Computing
 * Awards: Magna Cum Laude, Dean's Honors List
