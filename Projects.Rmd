@@ -13,6 +13,12 @@ output:
     * <b>What we did</b>: In a team of 22, from all over the globe, we spent 9 hours developing a model that would be able to predict how long a permit would be in review (ultimately allowing developers to understand and plan for the review process better). We also prototyped an API that could be used on the gethousing.org website to show users their estimated time in review. The event culminated in a presentation to the rest of the DataDive teams, sharing our project and findings.
     *	<b>How we did it</b>: As part of the team, I used ggplot and tidyverse to visualize potential variable relationships in R, then used pandas and scikit-learn in Python to build/test machine learning models (including linear regression, ridge regression, and lasso regression). After identifying several key variables and testing various machine learning algorithms, we were able to generate a gradient boosted decision tree model with an r-squared of 0.62 for use in an API.
   
+### Analyzing the Comments on a Web-Based Health Comic
+
+  * Exploring the comments section for a health comic developed by the NYSDOH AIDS Institute (this will be a link to one of the later reports that I created)
+    * <b>Goal</b>: The New York State Department of Health’s AIDS Institute created a web-based health comic to educate young readers about HIV/AIDS, STIs, drug user health, and LGBTQ+ health. The web forum that the comic was hosted on allowed readers to interact with the series, either through commenting, liking, or following. I wanted to collect and explore that reader interaction data to see if we could discover insights into what content resonated with readers, what the major topics in the discussions between readers were, and how the comic performed over time.
+    * <b>What we did</b>: Using R, I learned how to write functions that could scrape web data from the comic forum (you can read through my process here - this will be a link to the formulas that I created). I then did exploratory data analysis of the quantitative metrics in the data (i.e. the number of likes per episode, the number of comments per episode, the average frequency of comments per user, etc.). I also began a qualitative analysis of the comment text data, iteratively building a codebook to identify key themes among the comments.
+    * <b>Findings</b>: I produced several reports of the quantitative data analysis, using tidyverse and ggplot in R to pull out visualizations and aggregations of the data after every updated data scrape (example report linked above). I also explored basic sentiment analysis using TidyText. These reports were shared with the leadership team for the Digital Health Initiatives at the AIDS Institute to help guide the creation of further plot arcs.
     
 ### Using Plot.ly to Visualize HIV/AIDS Trends in NYC
 
@@ -40,8 +46,3 @@ output:
   * <b>Background</b>: To build my knowledge of visualizations in R, including how to integrate flexdashboard into websites, I decided to investigate where is safe to eat while in NYC.
   * <b>What we did</b>: Using open data provided by the NYC government, I created a dashboard created using flexdashboard in R to let you know how restaurants in NYC are keeping up with health regulations.
   * <b>How we did it</b>: [Eat here not there](dashboard_template.html) 
-  
-### Exploratory Data Analysis of Text Comments on a Web-Based Health Comic
- * <b> Coming soon! </b>
-    
-  
