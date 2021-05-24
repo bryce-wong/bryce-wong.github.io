@@ -8,7 +8,10 @@ output:
 
 ### Health + Data 
 
-#### Crossix, A Veeva Company | Senior Analyst, Marketing Analytics | June 2019 - Present
+#### Level | Data Analyst | February 2021 - Present
+* Overview: Level makes it easy for people to pay with their benefits, while helping businesses and their teams save money. Benefits are part of people’s total compensation: their livelihoods. But too often benefits are confusing and hard to use, leaving money on the table. Starting with dental and vision insurance, Level is rebuilding financial products for employers and their teams. With Level, everyone benefits: employers offer bigger benefits for less, members get more freedom and choice, and providers are paid instantly. Level makes paying with benefits as simple as paying with cash.
+
+#### Crossix, A Veeva Company | Senior Analyst, Marketing Analytics | June 2019 - January 2021
 * Own the end-to-end analysis of the effects of life sciences marketing on health behaviors by leveraging a comprehensive EHR, pharmacy, and claims data network through Crossix’s privacy-safe technology, SQL, and Apache Spark.
 * Responsible for reviewing project deliverables for newer analysts, as well as for providing guidance on technical, conceptual, and communication-related processes.
 * Lead the development of Spotfire visualization dashboards for internal deliverables, more efficient troubleshooting/bug-tracking workflows by founding a troubleshooting taskforce, and improved agile project management workflows (in JIRA).
@@ -28,7 +31,7 @@ output:
 * Identified research questions, developed survey instruments, and coded data to explore social media advertising for marijuana vaporizer pens.
 * Supported the reviewing and editing of manuscripts for publication.
 
-###Skills + Publications
+### Skills + Publications
 
 * Statistical Software: Experienced with SQL, R, Python, SAS
 * Computer: Experienced in Microsoft Word, Excel, and PowerPoint for both Mac and PC; Experienced with project management in JIRA and Confluence from the Atlassian product suite; proficient with web development (HTML5 and CSS) and Spotfire dashboard development

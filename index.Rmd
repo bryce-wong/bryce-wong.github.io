@@ -6,15 +6,9 @@ title: "Bryce Wong"
 
 <p align="right">
 
-### About Bryce (she/her/hers):
+### About Bryce (she/her):
 
-Current data analyst at Crossix and passionate about the responsible use of data science to solve the toughest problems facing society.
-
-My graduate thesis explored the ethical implications of big data for public health. I proposed the use of qualitative research methods to investigate:
-
-  * The perceptions and agendas influencing biostatisticians and data scientists working in this field
-  * How data infrastructures are designed and managed for health technology
-  * The potential impact of such design and management choices on issues of normalization, oppression, and empowerment 
+Current data analyst at [Level](https://level.com/) and passionate about the responsible use of data to solve the toughest problems facing society.
 
 If you want to reach out and talk more about anything on this site that interests you, you can email me at: <brycew.hello@gmail.com>
 
