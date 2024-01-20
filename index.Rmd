@@ -8,7 +8,7 @@ title: "Bryce Wong"
 
 ### About Bryce (she/her):
 
-Current data analyst at [Level](https://level.com/) and passionate about the responsible use of data to solve the toughest problems facing society.
+Current data scientist at [Level](https://level.com/) and passionate about the responsible use of data to solve the toughest problems facing society.
 
 If you want to reach out and talk more about anything on this site that interests you, you can email me at: <brycew.hello@gmail.com>
 
