@@ -6,10 +6,15 @@ output:
     toc_float: true
 ---
 
-### Health + Data 
+### Data 
 
-#### Level | Data Analyst | February 2021 - Present
-* Overview: Level makes it easy for people to pay with their benefits, while helping businesses and their teams save money. Benefits are part of people’s total compensation: their livelihoods. But too often benefits are confusing and hard to use, leaving money on the table. Starting with dental and vision insurance, Level is rebuilding financial products for employers and their teams. With Level, everyone benefits: employers offer bigger benefits for less, members get more freedom and choice, and providers are paid instantly. Level makes paying with benefits as simple as paying with cash.
+#### Level | Data Scientist | February 2021 - Present
+*	Perform ad hoc analyses with SQL and BI tools using a diverse range of data sets, including EDI dental claims data, card transaction data, Segment data from web and mobile apps, and bi-temporal ledger data. 
+*	Partner with engineering to use data in driving new product features, to collect system requirements from a data modeling perspective, and to design user stories that inform test cases.
+*	Develop, test and maintain custom ETLs and dbt models for analytical use cases, including using Python scripts and Jinja macros in transforming and documenting data. Deep experience with data wrangling nested JSON blobs outputted from protobuf messages into BigQuery data structs. 
+*	Drive collaboration with sales, finance, and operations teams to define and implement measuring of company health and KPIs.
+*	Led team in company-wide migration of data assets from Periscope to Looker, using LookML development to enable self-service analytics with engineers and non-technical stakeholders. Implemented trainings and office hours to familiarize teams with Looker for data-driven planning of team goals.
+*	Core member of the DEIB+ team, creating virtual events and resource guides to educate and celebrate diversity across Level and customers.
 
 #### Crossix, A Veeva Company | Senior Analyst, Marketing Analytics | June 2019 - January 2021
 * Own the end-to-end analysis of the effects of life sciences marketing on health behaviors by leveraging a comprehensive EHR, pharmacy, and claims data network through Crossix’s privacy-safe technology, SQL, and Apache Spark.
