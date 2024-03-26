@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "Resume"
       href: CV.html
-    - text: "Projects"
+    - text: "Portfolio"
       href: Projects.html
     - icon: fa-envelope fa-lg
       href: mailto:<brycew.hello@gmail.com>

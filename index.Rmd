@@ -14,7 +14,7 @@ If you want to reach out and talk more about anything on this site that interest
 
 See my [resume here](CV.html)
  
-### Selected Projects:
+### Selected Portfolio Projects:
 
   * [Microsoft + DataKind AI in Cities Virtual DataDive](https://www.datakind.org/blog/applying-ai-to-societal-challenges-in-cities-communities-highlights-from-datakinds-virtual-datadive)
   * [Exploratory Data Analysis of Text Comments on a Web-Based Health Comic](webtoons analysis june 12.html)
