@@ -12,7 +12,7 @@ navbar:
     - icon: fa-github fa-lg
       href: https://github.com/bryce-wong
     - icon: fa-linkedin fa-lg
-      href: https://www.linkedin.com/in/bryce-wong-mph-284219139/
+      href: https://www.linkedin.com/in/bryce-wong/
 
 output:
   html_document:
