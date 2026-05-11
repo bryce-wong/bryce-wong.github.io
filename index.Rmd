@@ -8,7 +8,7 @@ title: "Bryce Wong"
 
 ### About Bryce (she/her):
 
-Current data scientist at [Level](https://level.com/) and passionate about the responsible use of data to solve the toughest problems facing society.
+Current analytics engineer at [Pelago Health](https://www.pelagohealth.com/) and passionate about the responsible use of data to solve the toughest problems facing society.
 
 If you want to reach out and talk more about anything on this site that interests you, you can email me at: <brycew.hello@gmail.com>
 
@@ -17,8 +17,10 @@ See my [resume here](CV.html)
 ### Selected Portfolio Projects:
 
   * [Microsoft + DataKind AI in Cities Virtual DataDive](https://www.datakind.org/blog/applying-ai-to-societal-challenges-in-cities-communities-highlights-from-datakinds-virtual-datadive)
+  
   * [Exploratory Data Analysis of Text Comments on a Web-Based Health Comic](webtoons analysis june 12.html)
     * Plus how I created a [text data scraping algorithm](Webtoon_Comments.html)
+
   * [Assessing HIV/AIDS Trends and Disparities in NYC](Final_Report.html) 
 
 </p>
