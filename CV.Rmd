@@ -1,83 +1,139 @@
 ---
-title: "Resume"
+title: "Bryce Wong"
 output:
   html_document:
     toc: true
     toc_float: true
 ---
 
-### Data 
+**New York, NY · brycew.hello@gmail.com**  
+**[linkedin.com/in/bryce-wong](https://linkedin.com/in/bryce-wong) · [bryce-wong.github.io](https://bryce-wong.github.io)**
 
-#### Level | Data Scientist | February 2021 - Present
-*	Perform ad hoc analyses with SQL using a diverse range of data sets, including EDI dental claims data, card transaction data, sessionized customer event data from web and mobile apps, and bi-temporal ledger data. 
-*	Strategize cross-functionally with sales, finance, and operations teams to inform product roadmap through standing up core dashboards of key performance metrics, conducting quantitative analyses of pain points, and assembling qualitative findings based on interviews with stakeholders.
-*	Partner with engineering to design a new reporting architecture, including collecting system requirements from a data modeling perspective, determining user stories to inform test cases, and reviewing warehousing frameworks to ensure robust analytical capabilities.
-*	Develop and test dbt models for analytical use cases with dbt alerting for data health. Use Jinja macros to transform and document data stored as JSON blobs outputted from protobuf messages into BigQuery data structs. 
-*	Implement custom Python ETLs using Kubernetes to extract data from third party APIs for analysis in Jupyter notebooks (including developing risk rules through assessing statistical performance metrics of  risk-related features). 
-*	Led team in company-wide migration of data assets from Periscope to Looker, using LookML development to enable self-service analytics with engineers and non-technical stakeholders. Implemented trainings and office hours to familiarize teams with Looker for data-driven planning of team goals.
-*	Core member of the DEIB+ team, creating virtual events and resource guides to educate and celebrate diversity across Level and customers.
+---
 
-#### Crossix, A Veeva Company | Senior Analyst, Marketing Analytics | June 2019 - January 2021
-*	Owned over 30 end-to-end analyses that evaluated the impact of digital marketing on brand conversions, retention, and LTV. Queried and interpreted claims, EHR, and drug prescription data insights with SQL to communicate actionable and scalable campaign recommendations for marketing optimizations.
-*	Developed visualization dashboards, presented findings, and translated technical processes to stakeholders.
-*	Partnered with marketing, product, and client services teams to scope projects and visualize data for client workshops and industry blog posts that assess the impact of COVID-19 on marketing trends.
- 
-### Digital Health 
+### Summary
 
-#### NYSDOH's AIDS Institute | Digital Health Intern | Jan 2018 - June 2019
-* Scraped/analyzed comments from an online forum with R to assess the impact of a web-based comic, “Tested,” that aims to educate young readers about health topics. Used tidyverse, ggplot, and tidytext to visualize and aggregate insights into markdown reports.
-* Created and managed social media strategies for the Y Get It? (YGI) project, which focuses on linking HIV-affected youth to care through a mobile application intervention and the comic serial.    
-* Developed and led presentations on new tools and technologies for digital health promotion.
+Analytics engineer with 7+ years building canonical data models, semantic-layer infrastructure, and AI-native analytics workflows across healthcare and fintech startups. Currently leading billing data architecture and a company-wide semantic layer migration at Pelago Health. Excited to apply this foundation to building trustworthy, scalable analytics infrastructure for AI products.
 
-### Research 
+---
 
-#### Lerner Center for Public Health Promotion | Research Fellow | June - Dec 2018
-* Assisted with coding, analyzing (in SAS), and interpreting point-of-sale advertising data for tobacco products in New York City.
-* Identified research questions, developed survey instruments, and coded data to explore social media advertising for marijuana vaporizer pens.
-* Supported the reviewing and editing of manuscripts for publication.
+### Professional Experience
+
+#### Pelago Health (formerly Quit Genius) | Analytics Engineer | May 2024 – Present
+
+*New York, NY · Reports directly to CFO · Virtual specialty substance use clinic serving employers and health plans.*
+
+* Re-architected Pelago's billing data platform from a monolithic dbt pipeline into a modular, snapshotted intermediate-model system with layered dbt tests and lineage documentation — powering enterprise billing workflows across 10+ clients. Partnered with data engineering to orchestrate upstream ingestion through Airflow DAGs, establishing canonical billing datasets serving Finance, Operations, Product, and GTM reporting.
+
+* Led company-wide migration strategy from Looker to Cube semantic-layer architecture to standardize metric definitions, enable governed self-serve analytics across 14 business domains, and ground LLM-assisted querying workflows in a trusted metric layer.
+
+* Built and shipped an AI-assisted analytics QA and incident-routing pipeline integrating dbt, Elementary, Slack, Claude, and Jira. The system detects billing data anomalies, generates LLM-grounded failure summaries from dbt manifest and model lineage, and auto-routes triaged tickets to the right owner — replacing manual on-call inspection and significantly reducing time-to-triage on billing incidents.
+
+* Partnered with GTM teams (Sales, Customer Success, Marketing) to define and instrument funnel, account-health, and member-engagement metrics; owned the Member Strategy Dashboard end-to-end and contributed to the multi-phase Member Journey Dashboard used by executive leadership to monitor member activation, care initiation, treatment engagement, and retention.
+
+* Built within-member engagement anomaly detection models using rolling z-score baselines against behavioral signals, translating qualitative clinical-operations heuristics into scalable, data-driven prioritization workflows.
+
+---
+
+#### Level | Data Analyst → Data Scientist | February 2021 – December 2024
+
+*New York, NY · B2C fintech offering embedded card products and dental benefits.*
+
+**Data Scientist (Part-time Contract) · May 2024 – December 2024**
+
+* Partnered with Product, Operations, and Risk to formalize fraud and payments-risk data into standardized metrics and operational reporting; explored transactional and fraud-behavior datasets in Python and Jupyter to support risk-program analytics.
+
+**Data Analyst, promoted to Data Scientist · February 2021 – January 2024**
+
+* Built and maintained production dbt pipelines transforming nested transactional and protobuf-based payments data into documented canonical models for product analytics, risk monitoring, operational reporting, and experimentation.
+
+* Developed reusable Jinja macros to convert protobuf-derived JSON blobs into structured BigQuery data models used across multiple analytics domains — reducing model development time and enforcing consistent data definitions.
+
+* Led enterprise BI migration from Periscope to Looker/LookML, designing reusable semantic definitions and enabling scalable self-serve analytics across Product, Engineering, Operations, and non-technical business teams; ran enablement sessions and office hours to accelerate adoption.
+
+* Defined success metrics for Product and Engineering roadmap initiatives, identifying key levers for increasing card utilization and reducing operational burden; partnered with stakeholders to translate data requirements into actionable insights.
+
+* Implemented custom Python ETLs to extract third-party API data for exploratory analysis in Jupyter Notebooks, including developing and evaluating risk rules using statistical performance metrics on fraud-related features.
+
+---
+
+#### Crossix, A Veeva Company | Senior Analyst, Marketing Analytics | June 2019 – January 2021
+
+*New York, NY*
+
+* Owned 30+ end-to-end analyses evaluating life-sciences marketing impact on healthcare behaviors using privacy-safe claims, EHR, and prescription-drug datasets — delivering actionable, scalable campaign recommendations to pharmaceutical clients.
+
+* Identified operational inefficiencies and designed troubleshooting workflows and tooling improvements as part of an internal operational analytics working group.
+
+* Ingested, explored, and packaged COVID-19 marketing-trend data for client workshops and industry-facing content.
+
+---
+
+#### New York State Department of Health AIDS Institute | Digital Health Initiatives Intern | January 2018 – June 2019
+
+*New York, NY*
+
+* Built web-scraping pipelines and performed quantitative and qualitative analysis in R (tidyverse, ggplot, sentiment analysis) on 500+ social media comments to evaluate engagement for a HRSA-funded HIV intervention; instrumented Google Analytics on the program website.
+
+* Developed and led presentations on new tools and technologies for digital health program promotion.
+
+---
+
+#### Columbia University Mailman School of Public Health | Lerner Center Research Fellow | June – December 2018
+
+*New York, NY*
+
+* Coded and analyzed point-of-sale advertising survey data for tobacco products across New York City retailers.
+
+* Contributed to research design, survey instruments, and policy reviews for a study on social media advertising of cannabis vaporizer products; supported manuscript development for publication.
+
+---
 
 ### Skills
-*	Data analysis (A/B testing, data mining)
-*	Fluent in ETL pipelines and dimensional modeling 
-*	Expert in SQL (especially BigQuery)
-*	R (tidyverse, ggplot, flexdashboards)
-*	Python (pandas, numpy, seaborn, sklearn)
-*	Looker/LookML development
-*	Git/Github version control
-*	dbt development and testing
-*	Analytics engineering
 
-### Publications
-*	Spillane, T.E., Wong, B.A., Giovenco, D.P. (2020). Content analysis of instagram posts by leading cannabis vaporizer brands. Drug and Alcohol Dependence, https://doi.org/10.1016/j.drugalcdep.2020.108353
-*	Giovenco, D.P., Spillane, T.E., Wong, B.A., Wackowski, O.A. (2019). Characteristics of storefront tobacco advertisements and differences by product type: A content analysis of retailers in New York City, USA. Preventive Medicine, 123, 204-207.
+* **Analytics Engineering:** dbt (advanced), Cube, Looker/LookML, semantic layer design, canonical data modeling, data lineage documentation, dbt testing and alerting (Elementary)
+* **Data Infrastructure:** Airflow, Snowflake, BigQuery, Postgres, ETL/ELT pipeline design
+* **Languages:** SQL (expert), Python (pandas, numpy, statsmodels, sklearn), R (tidyverse, ggplot), Jinja
+* **AI-Native Workflows:** LLM-integrated analytics pipelines, Claude, Claude Code, Cursor
+* **Other:** Git/GitHub, Jupyter, self-serve analytics enablement, cross-functional stakeholder partnership (GTM, Product, Engineering, Finance)
+
+---
 
 ### Education
 
-#### Master of Public Health | Columbia University Mailman SPH
-* Department: Sociomedical Sciences
+#### Master of Public Health | Columbia University Mailman School of Public Health
+
+* Concentration: Sociomedical Sciences
 * Certificate: Applied Biostatistics
-* Awards: Dr. Jack Elinson Scholarship recipient
+* Award: Dr. Jack Elinson Scholarship Recipient
 * Thesis: *How Data Determines Health: A Qualitative Research Proposal Exploring Perceptions of Big Data in Public Health*
 
-#### Bachelor of Science | University of California, Los Angeles
-* Major: Cognitive Science
-* Specialization in Computing
-* Awards: Magna Cum Laude, Dean's Honors List
+#### Bachelor of Science, Cognitive Science (Specialization in Computing) | University of California, Los Angeles
+
+* Graduated Magna Cum Laude · Dean's Honors List
+
+---
+
+### Publications
+
+* Spillane, T.E., Wong, B.A., Giovenco, D.P. (2020). Content analysis of Instagram posts by leading cannabis vaporizer brands. *Drug and Alcohol Dependence.* https://doi.org/10.1016/j.drugalcdep.2020.108353
+
+* Giovenco, D.P., Spillane, T.E., Wong, B.A., Wackowski, O.A. (2019). Characteristics of storefront tobacco advertisements and differences by product type. *Preventive Medicine,* 123, 204–207.
+
+---
 
 ### Hackathons
 
-#### Open Climate Collabathon 2019 | [Consumer Disclosure Team](https://collabathon-docs.openclimate.earth/hacks/team-contributions/consumer-disclosure-and-sustainable-supply-chains) | Dec. 2019
-*	Winner of the Community Choice award and the Most Innovative Contribution award.
-*	Outlined a framework for developing and reporting a "sustainability score" that would be used to grade the supply chain of a consumer product. The team also developed a proof-of-concept widget that could be added as a browser extension to report these scores on consumer websites.
-*	Contributed to the writing of the overarching framework and helped generate an example of an application for the project (the iPhone). 
-*	Joined the 2020 discussions to help facilitate project management and next steps for future Collabathons.
+#### Open Climate Collabathon 2019 | Consumer Disclosure Team | December 2019
 
-#### Datakind + Microsoft Virtual DataDive: Applying AI to Societal Challenges in US Cities | Miami Project | Oct. 2019
-*	Member of the Miami Project team, comprised of volunteer data scientists and data analysts in collaboration with the Code for Miami organization to implement AI in cities.
-* Engaged in exploratory data analysis using ggplot and tidyverse in R, as well as built/tested machine learning models using pandas and scikit-learn in Python. Also assisted with standing up an API for the project partner to understand the variables that impact turnaround time for applications to develop affordable housing. 
+* Won Community Choice and Most Innovative Contribution awards.
+* Designed a "sustainability score" framework for grading consumer product supply chains and contributed to a proof-of-concept browser extension to surface those scores on retail websites.
 
-#### Mount Sinai Health Hackathon 2019 | Team Blackbox AI | Oct. 2019
-*	Designed and created a website that uses video lessons, interactive statistical visualizations, and written descriptions to educate clinicians on the application and interpretation of artificial intelligence in healthcare settings.
-*	Brainstormed project execution and wrote HTML in Dash to create a functioning mock-up of the website (domain no longer active).
+#### DataKind + Microsoft Virtual DataDive: Applying AI to Societal Challenges | Miami Project | October 2019
 
+* Collaborated with volunteer data scientists and the Code for Miami organization to apply AI to affordable housing.
+* Conducted exploratory data analysis in R and Python; helped build and evaluate ML models and stood up an API to identify variables driving turnaround time for affordable housing applications.
 
+#### Mount Sinai Health Hackathon 2019 | Team Blackbox AI | October 2019
+
+* Designed and built a prototype website using Dash (Python) to educate clinicians on the application and interpretation of AI in healthcare settings, incorporating interactive statistical visualizations and written explainers.
