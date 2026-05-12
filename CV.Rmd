@@ -6,8 +6,7 @@ output:
     toc_float: true
 ---
 
-**New York, NY · brycew.hello@gmail.com**  
-**[linkedin.com/in/bryce-wong](https://linkedin.com/in/bryce-wong) · [bryce-wong.github.io](https://bryce-wong.github.io)**
+**New York, NY · brycew.hello@gmail.com**
 
 ---
 
