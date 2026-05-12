@@ -91,7 +91,7 @@ Analytics engineer with 7+ years building canonical data models, semantic-layer 
 ### Skills
 
 * **Analytics Engineering:** dbt (advanced), Cube, Looker/LookML, semantic layer design, canonical data modeling, data lineage documentation, dbt testing and alerting (Elementary)
-* **Data Infrastructure:** Airflow, Snowflake, BigQuery, Postgres, ETL/ELT pipeline design
+* **Data Infrastructure:** Airflow, AWS Redshift, S3, Datafold, BigQuery, Postgres, ETL/ELT pipeline design
 * **Languages:** SQL (expert), Python (pandas, numpy, statsmodels, sklearn), R (tidyverse, ggplot), Jinja
 * **AI-Native Workflows:** LLM-integrated analytics pipelines, Claude, Claude Code, Cursor
 * **Other:** Git/GitHub, Jupyter, self-serve analytics enablement, cross-functional stakeholder partnership (GTM, Product, Engineering, Finance)
